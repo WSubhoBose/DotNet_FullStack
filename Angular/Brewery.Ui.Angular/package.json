@@ -1,0 +1,15 @@
+{
+  "name": "brewery-ui-angular-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "src/Brewery.Ui.Angular",
+    "tests/Brewery.Ui.Angular.Tests"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=brewery-ui-angular",
+    "build": "npm run build --workspace=brewery-ui-angular",
+    "test:unit": "npm run test --workspace=brewery-ui-angular",
+    "test:e2e": "npm run test --workspace=brewery-ui-angular-tests"
+  }
+}

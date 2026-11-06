@@ -1,0 +1,43 @@
+2026-11-02 19:04:58.383 +05:30 [INF] Now listening on: http://localhost:5001
+2026-11-02 19:04:58.478 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-02 19:04:58.480 +05:30 [INF] Hosting environment: Development
+2026-11-02 19:04:58.481 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-02 19:05:08.462 +05:30 [INF] HTTP GET /swagger responded 301 in 940.1976 ms
+2026-11-02 19:05:09.429 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 593.7547 ms
+2026-11-02 19:05:11.929 +05:30 [INF] HTTP GET /swagger/index.css responded 200 in 307.0008 ms
+2026-11-02 19:05:12.003 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 440.3019 ms
+2026-11-02 19:05:12.079 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 43.6922 ms
+2026-11-02 19:05:12.080 +05:30 [INF] HTTP GET /swagger/index.js responded 200 in 1.9170 ms
+2026-11-02 19:05:12.082 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 453.3166 ms
+2026-11-02 19:05:12.971 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 33.8698 ms
+2026-11-02 19:05:14.035 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 1117.0852 ms
+2026-11-02 19:05:23.533 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 42.3631 ms
+2026-11-02 19:13:51.280 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.6475 ms
+2026-11-02 19:13:59.121 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 6.7540 ms
+2026-11-02 21:47:52.980 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-02 21:47:53.086 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-02 21:47:53.088 +05:30 [INF] Hosting environment: Development
+2026-11-02 21:47:53.088 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-02 21:48:23.291 +05:30 [INF] HTTP GET /swagger responded 301 in 79.1433 ms
+2026-11-02 21:48:27.587 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 197.4831 ms
+2026-11-02 21:48:27.709 +05:30 [INF] HTTP GET /swagger/index.css responded 200 in 73.2653 ms
+2026-11-02 21:48:27.709 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 70.1861 ms
+2026-11-02 21:48:27.731 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 95.4297 ms
+2026-11-02 21:48:27.991 +05:30 [INF] HTTP GET /swagger/index.js responded 200 in 7.2014 ms
+2026-11-02 21:48:27.992 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 16.6740 ms
+2026-11-02 21:48:29.168 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 4.4730 ms
+2026-11-02 21:48:29.357 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 405.7284 ms
+2026-11-02 21:48:54.389 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.6226 ms
+2026-11-02 21:49:01.101 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 10.5763 ms
+2026-11-02 22:10:42.709 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-02 22:10:42.762 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-02 22:10:42.763 +05:30 [INF] Hosting environment: Development
+2026-11-02 22:10:42.763 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-02 22:10:44.753 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 456.9590 ms
+2026-11-02 22:10:44.865 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.7704 ms
+2026-11-02 22:10:44.967 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 99.1619 ms
+2026-11-02 22:10:44.967 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 106.2909 ms
+2026-11-02 22:10:44.967 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 108.7726 ms
+2026-11-02 22:10:44.979 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 120.6045 ms
+2026-11-02 22:10:45.749 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 349.2850 ms
+2026-11-02 22:10:49.542 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 45.2623 ms

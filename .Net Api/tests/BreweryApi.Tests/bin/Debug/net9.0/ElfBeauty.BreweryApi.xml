@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElfBeauty.BreweryApi</name>
+    </assembly>
+    <members>
+        <member name="T:ElfBeauty.BreweryApi.Controllers.BreweriesV1Controller">
+            <summary>Provides version 1 brewery search and autocomplete endpoints.</summary>
+            <param name="breweryDataService">Application service for brewery search operations.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Controllers.BreweriesV1Controller.#ctor(ElfBeauty.BreweryApi.Domain.Interfaces.IBreweryService)">
+            <summary>Provides version 1 brewery search and autocomplete endpoints.</summary>
+            <param name="breweryDataService">Application service for brewery search operations.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Controllers.BreweriesV1Controller.Get(ElfBeauty.BreweryApi.Domain.Models.BreweryQuery,System.Threading.CancellationToken)">
+            <summary>Searches and lists breweries with filtering, sorting, and pagination.</summary>
+            <remarks>
+            Results can be filtered by search text, brewery name, or city. Page size is limited
+            to 200. Distance sorting requires both latitude and longitude.
+            </remarks>
+            <param name="query">Filters, sort options, coordinates, and pagination settings.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <returns>A page of matching breweries and pagination metadata.</returns>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Controllers.BreweriesV1Controller.Autocomplete(System.String,System.Threading.CancellationToken,System.Int32)">
+            <summary>Returns autocomplete suggestions for brewery names matching a term.</summary>
+            <remarks>The term must contain at least two characters; the limit must be between 1 and 20.</remarks>
+            <param name="term">Required text used to find matching brewery names.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <param name="limit">Maximum number of suggestions to return; defaults to 10.</param>
+            <returns>A list of matching brewery-name suggestions.</returns>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Extensions.RegisterDependencies">
+            <summary>Registers the brewery API's application and infrastructure dependencies.</summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Extensions.RegisterDependencies.AddDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers persistence and external-service infrastructure.
+            </summary>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Middleware.ExceptionHandlingMiddleware">
+            <summary>Converts application and upstream-service exceptions into Problem Details responses.</summary>
+            <param name="next">The next request delegate in the middleware pipeline.</param>
+            <param name="logger">Logger used to record handled and unhandled request failures.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Middleware.ExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{ElfBeauty.BreweryApi.Middleware.ExceptionHandlingMiddleware})">
+            <summary>Converts application and upstream-service exceptions into Problem Details responses.</summary>
+            <param name="next">The next request delegate in the middleware pipeline.</param>
+            <param name="logger">Logger used to record handled and unhandled request failures.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Invokes the next middleware and handles exceptions raised while processing the request.</summary>
+            <param name="context">The current HTTP request and response context.</param>
+        </member>
+        <member name="T:Program">
+            <summary>Entry point for the Brewery API application.</summary>
+        </member>
+    </members>
+</doc>

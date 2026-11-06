@@ -1,0 +1,548 @@
+2026-11-05 18:15:52.350 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 117.8536 ms
+2026-11-05 18:15:52.371 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:15:52.382 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-11-05 18:15:52.386 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 17.8372 ms
+2026-11-05 18:15:52.389 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6616 ms
+2026-11-05 18:15:52.387 +05:30 [ERR] HTTP GET /api/v2/breweries/autocomplete responded 500 in 15.2319 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && a.ExpiresAtUtc > DateTimeOffset.UtcNow)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:15:52.396 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 5.2253 ms
+2026-11-05 18:15:52.397 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5591 ms
+2026-11-05 18:15:52.399 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5189 ms
+2026-11-05 18:15:52.425 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5816 ms
+2026-11-05 18:15:52.436 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6710 ms
+2026-11-05 18:15:52.448 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5276 ms
+2026-11-05 18:15:52.450 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4033 ms
+2026-11-05 18:15:52.451 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3936 ms
+2026-11-05 18:15:52.452 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3855 ms
+2026-11-05 18:15:52.453 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4267 ms
+2026-11-05 18:15:52.454 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4296 ms
+2026-11-05 18:15:52.455 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4339 ms
+2026-11-05 18:15:52.456 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4372 ms
+2026-11-05 18:15:52.458 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6498 ms
+2026-11-05 18:15:52.459 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6194 ms
+2026-11-05 18:15:52.461 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4480 ms
+2026-11-05 18:15:52.462 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4386 ms
+2026-11-05 18:15:52.463 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4026 ms
+2026-11-05 18:15:52.464 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3794 ms
+2026-11-05 18:15:52.465 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3868 ms
+2026-11-05 18:15:52.466 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3655 ms
+2026-11-05 18:15:52.466 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:15:52.467 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3927 ms
+2026-11-05 18:15:52.468 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4790 ms
+2026-11-05 18:15:52.470 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6427 ms
+2026-11-05 18:15:52.471 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5188 ms
+2026-11-05 18:15:52.473 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4254 ms
+2026-11-05 18:15:52.474 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4268 ms
+2026-11-05 18:15:52.476 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8584 ms
+2026-11-05 18:15:52.478 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8563 ms
+2026-11-05 18:15:52.480 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7392 ms
+2026-11-05 18:15:52.482 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.2548 ms
+2026-11-05 18:15:52.484 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8658 ms
+2026-11-05 18:15:52.491 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 28.0353 ms
+2026-11-05 18:15:52.492 +05:30 [WRN] HTTP GET /api/v1/breweries responded 429 in 5.8548 ms
+2026-11-05 18:15:52.768 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 222.8595 ms
+2026-11-05 18:15:52.768 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 167.6182 ms
+2026-11-05 18:15:52.781 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:15:52.883 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 102.1235 ms
+2026-11-05 18:15:52.903 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 123.8430 ms
+2026-11-05 18:15:52.905 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 20.1286 ms
+2026-11-05 18:20:15.499 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:20:15.498 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:20:15.552 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-05 18:20:15.556 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 117.7111 ms
+2026-11-05 18:20:15.590 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 153.6779 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:15.617 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPR7DAC780L
+2026-11-05 18:20:15.633 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 1.3148 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:15.635 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPR7DAC780N
+2026-11-05 18:20:15.643 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-11-05 18:20:15.656 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 15.2477 ms
+2026-11-05 18:20:15.661 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-11-05 18:20:15.664 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 3.9831 ms
+2026-11-05 18:20:15.665 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 82.6494 ms
+2026-11-05 18:20:15.670 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-11-05 18:20:15.671 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.1359 ms
+2026-11-05 18:20:15.775 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:20:15.845 +05:30 [ERR] HTTP GET /api/v2/breweries/autocomplete responded 500 in 17.6162 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:15.893 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 123.3790 ms
+2026-11-05 18:20:15.906 +05:30 [ERR] HTTP GET /api/v2/breweries/autocomplete responded 500 in 4.4571 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:15.908 +05:30 [ERR] HTTP GET /api/v1/breweries/autocomplete responded 500 in 2.8115 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:15.909 +05:30 [ERR] Request failed. StatusCode: 500, Method: GET, Path: /api/v2/breweries/autocomplete, TraceId: 0HNPR7DAC780V
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-05 18:20:15.992 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:20:16.009 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:20:16.022 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-11-05 18:20:16.028 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 39.9006 ms
+2026-11-05 18:20:16.030 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 24.6813 ms
+2026-11-05 18:20:16.035 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9854 ms
+2026-11-05 18:20:16.036 +05:30 [ERR] HTTP GET /api/v2/breweries/autocomplete responded 500 in 2.1663 ms
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:20:16.038 +05:30 [ERR] Request failed. StatusCode: 500, Method: GET, Path: /api/v2/breweries/autocomplete, TraceId: 0HNPR7DAC7818
+System.InvalidOperationException: The LINQ expression 'DbSet<AccessTokenRecord>()
+    .Where(a => a.TokenHash == __tokenHash_0 && a.RevokedAtUtc == null && string.Compare(
+        strA: a.ExpiresAtUtc, 
+        strB: DateTimeOffset.UtcNow.ToString("O")) > 0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.SingleOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Infrastructure.SqliteActiveTokenStore.GetActiveUserAsync(String token, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteActiveTokenStore.cs:line 46
+   at BreweryApi.Authentication.CustomTokenAuthenticationHandler.HandleAuthenticateAsync() in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Authentication\CustomTokenAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-05 18:20:16.081 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4818 ms
+2026-11-05 18:20:16.094 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9728 ms
+2026-11-05 18:20:16.096 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6653 ms
+2026-11-05 18:20:16.097 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7076 ms
+2026-11-05 18:20:16.099 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6745 ms
+2026-11-05 18:20:16.101 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.0525 ms
+2026-11-05 18:20:16.104 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9174 ms
+2026-11-05 18:20:16.117 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 11.6998 ms
+2026-11-05 18:20:16.163 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 25.8797 ms
+2026-11-05 18:20:16.165 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9317 ms
+2026-11-05 18:20:16.167 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9170 ms
+2026-11-05 18:20:16.170 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8517 ms
+2026-11-05 18:20:16.172 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8553 ms
+2026-11-05 18:20:16.174 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8293 ms
+2026-11-05 18:20:16.178 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.0639 ms
+2026-11-05 18:20:16.181 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.5068 ms
+2026-11-05 18:20:16.183 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9767 ms
+2026-11-05 18:20:16.188 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 3.0302 ms
+2026-11-05 18:20:16.190 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9449 ms
+2026-11-05 18:20:16.192 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9634 ms
+2026-11-05 18:20:16.195 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8472 ms
+2026-11-05 18:20:16.197 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9237 ms
+2026-11-05 18:20:16.200 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9372 ms
+2026-11-05 18:20:16.201 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7648 ms
+2026-11-05 18:20:16.207 +05:30 [WRN] HTTP GET /api/v1/breweries responded 429 in 4.8519 ms
+2026-11-05 18:21:41.992 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:41.992 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:42.057 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-05 18:21:42.064 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 152.9176 ms
+2026-11-05 18:21:42.100 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 193.5764 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:21:42.129 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPR7E42B7GV
+2026-11-05 18:21:42.148 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 2.1477 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:21:42.150 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPR7E42B7H1
+2026-11-05 18:21:42.163 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-11-05 18:21:42.176 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 18.3054 ms
+2026-11-05 18:21:42.183 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-11-05 18:21:42.185 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 3.1212 ms
+2026-11-05 18:21:42.190 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-11-05 18:21:42.191 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.7483 ms
+2026-11-05 18:21:42.197 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:asc:_:_:1:10
+2026-11-05 18:21:42.199 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.1768 ms
+2026-11-05 18:21:42.236 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 0.8205 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:21:42.238 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 148.0758 ms
+2026-11-05 18:21:42.239 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPR7E42B7H6
+2026-11-05 18:21:42.332 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:42.399 +05:30 [INF] Auth was not authenticated. Failure message: The access token is not valid or has expired.
+2026-11-05 18:21:42.406 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-05 18:21:42.406 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 401 in 40.2642 ms
+2026-11-05 18:21:42.436 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 110.8304 ms
+2026-11-05 18:21:42.451 +05:30 [INF] Auth was not authenticated. Failure message: The access token is not valid or has expired.
+2026-11-05 18:21:42.458 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-05 18:21:42.459 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 403 in 14.2915 ms
+2026-11-05 18:21:42.537 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:42.547 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:42.555 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-11-05 18:21:42.561 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 16.6234 ms
+2026-11-05 18:21:42.568 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 45.1974 ms
+2026-11-05 18:21:42.569 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7929 ms
+2026-11-05 18:21:42.575 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 4.7648 ms
+2026-11-05 18:21:42.578 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9571 ms
+2026-11-05 18:21:42.579 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4945 ms
+2026-11-05 18:21:42.580 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4094 ms
+2026-11-05 18:21:42.582 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4143 ms
+2026-11-05 18:21:42.583 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4319 ms
+2026-11-05 18:21:42.584 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4326 ms
+2026-11-05 18:21:42.585 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4152 ms
+2026-11-05 18:21:42.586 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6282 ms
+2026-11-05 18:21:42.588 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4614 ms
+2026-11-05 18:21:42.589 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4317 ms
+2026-11-05 18:21:42.590 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7008 ms
+2026-11-05 18:21:42.592 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9484 ms
+2026-11-05 18:21:42.594 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6019 ms
+2026-11-05 18:21:42.596 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4934 ms
+2026-11-05 18:21:42.597 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4328 ms
+2026-11-05 18:21:42.599 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9466 ms
+2026-11-05 18:21:42.601 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7601 ms
+2026-11-05 18:21:42.603 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5296 ms
+2026-11-05 18:21:42.604 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4725 ms
+2026-11-05 18:21:42.605 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5096 ms
+2026-11-05 18:21:42.607 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4722 ms
+2026-11-05 18:21:42.608 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4178 ms
+2026-11-05 18:21:42.609 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6002 ms
+2026-11-05 18:21:42.611 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8459 ms
+2026-11-05 18:21:42.613 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7665 ms
+2026-11-05 18:21:42.615 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7135 ms
+2026-11-05 18:21:42.617 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5272 ms
+2026-11-05 18:21:42.618 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4271 ms
+2026-11-05 18:21:42.619 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4172 ms
+2026-11-05 18:21:42.620 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3770 ms
+2026-11-05 18:21:42.621 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4009 ms
+2026-11-05 18:21:42.622 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3657 ms
+2026-11-05 18:21:42.623 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3359 ms
+2026-11-05 18:21:42.624 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3455 ms
+2026-11-05 18:21:42.625 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3721 ms
+2026-11-05 18:21:42.627 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.1154 ms
+2026-11-05 18:21:42.629 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7096 ms
+2026-11-05 18:21:42.631 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8041 ms
+2026-11-05 18:21:42.632 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5424 ms
+2026-11-05 18:21:42.634 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4826 ms
+2026-11-05 18:21:42.635 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3834 ms
+2026-11-05 18:21:42.636 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4261 ms
+2026-11-05 18:21:42.637 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4186 ms
+2026-11-05 18:21:42.638 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4006 ms
+2026-11-05 18:21:42.639 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4202 ms
+2026-11-05 18:21:42.639 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 400 in 68.5075 ms
+2026-11-05 18:21:42.640 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3935 ms
+2026-11-05 18:21:42.641 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4577 ms
+2026-11-05 18:21:42.644 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9298 ms
+2026-11-05 18:21:42.647 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7967 ms
+2026-11-05 18:21:42.649 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.4175 ms
+2026-11-05 18:21:42.915 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 194.1031 ms
+2026-11-05 18:21:42.915 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 204.4161 ms
+2026-11-05 18:21:42.928 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:21:42.957 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 29.8186 ms
+2026-11-05 18:21:42.971 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 44.1491 ms
+2026-11-05 18:21:42.978 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 18.4267 ms
+2026-11-05 18:21:42.985 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-05 18:21:42.986 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 2.0704 ms
+2026-11-05 18:23:04.821 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:23:04.821 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:23:04.883 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-05 18:23:04.888 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 134.2076 ms
+2026-11-05 18:23:04.916 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 165.2140 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:23:04.942 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPR7ESQGEF9
+2026-11-05 18:23:04.961 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 1.9904 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method274(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-05 18:23:04.964 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPR7ESQGEFC
+2026-11-05 18:23:04.974 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-11-05 18:23:04.990 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 19.4343 ms
+2026-11-05 18:23:04.996 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-11-05 18:23:04.999 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 3.0218 ms
+2026-11-05 18:23:05.002 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 95.6320 ms
+2026-11-05 18:23:05.003 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-11-05 18:23:05.004 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.7244 ms
+2026-11-05 18:23:05.101 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-05 18:23:05.108 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-05 18:23:05.109 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 403 in 36.9122 ms
+2026-11-05 18:23:05.134 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 10.5363 ms
+2026-11-05 18:23:05.145 +05:30 [INF] HTTP GET /health responded 200 in 6.3527 ms
+2026-11-05 18:23:05.151 +05:30 [INF] HTTP GET /health responded 200 in 1.0211 ms
+2026-11-05 18:23:05.152 +05:30 [INF] HTTP GET /health responded 200 in 0.2340 ms
+2026-11-05 18:23:05.154 +05:30 [INF] HTTP GET /health responded 200 in 0.2174 ms
+2026-11-05 18:23:05.155 +05:30 [INF] HTTP GET /health responded 200 in 0.1589 ms
+2026-11-05 18:23:05.191 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 86.4849 ms

@@ -1,0 +1,90 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/auth/token",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/token",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 100
+      },
+      "SwaggerKey": "brewery"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v2/breweries",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/breweries",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 100
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": [ "Auth" ],
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "brewery"
+    },
+    {
+      "DownstreamPathTemplate": "/api/v2/breweries/autocomplete",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/breweries/autocomplete",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 100
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKeys": [ "Auth" ],
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "brewery"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "brewery",
+      "Config": [
+        {
+          "Name": "Brewery API",
+          "Version": "v2",
+          "Url": "http://localhost:5002/swagger/v2/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5001",
+    "RateLimitOptions": {
+      "ClientIdHeader": "ClientId",
+      "QuotaExceededMessage": "Rate limit exceeded. Try again later.",
+      "RateLimitCounterPrefix": "brewery-gateway",
+      "HttpStatusCode": 429
+    }
+  }
+}

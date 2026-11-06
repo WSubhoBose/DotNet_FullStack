@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/BreweryApi.Domain/BreweryApi.Domain.csproj" />
+  <Project Path="src/BreweryApi.Infrastructure/BreweryApi.Infrastructure.csproj" />
+  <Project Path="src/BreweryApi.Application/BreweryApi.Application.csproj" />
+  <Project Path="src/BreweryApi/BreweryApi.csproj" />
+  <Project Path="tests/BreweryApi.Tests/BreweryApi.Tests.csproj" />
+</Solution>

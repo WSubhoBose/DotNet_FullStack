@@ -1,0 +1,27 @@
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\refint\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ref\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.sourcelink.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\refint\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ref\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\bin\Debug\net9.0\ElfBeauty.BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\obj\Debug\net9.0\ElfBeauty.BreweryApi.Domain.xml

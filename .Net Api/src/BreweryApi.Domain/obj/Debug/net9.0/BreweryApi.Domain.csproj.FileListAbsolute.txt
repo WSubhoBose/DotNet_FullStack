@@ -1,0 +1,28 @@
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\refint\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\obj\Debug\net9.0\ref\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\bin\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\refint\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\obj\Debug\net9.0\ref\BreweryApi.Domain.dll

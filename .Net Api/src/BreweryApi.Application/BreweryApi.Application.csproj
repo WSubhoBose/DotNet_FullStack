@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <InvariantGlobalization>false</InvariantGlobalization>
+        <WarningsNotAsErrors>NU1900</WarningsNotAsErrors>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BreweryApi.Domain\BreweryApi.Domain.csproj" />
+    <ProjectReference Include="..\BreweryApi.Infrastructure\BreweryApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElfBeauty.BreweryApi.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:ElfBeauty.BreweryApi.Domain.PagedResponse`1">
+            <summary>A page of brewery results and its pagination metadata.</summary>
+            <typeparam name="T">Type of each item in the result page.</typeparam>
+            <param name="Breweries">Items on the current page.</param>
+            <param name="Page">One-based current page number.</param>
+            <param name="PageSize">Maximum number of items per page.</param>
+            <param name="TotalCount">Total matching item count, when supplied by the data source.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.PagedResponse`1.#ctor(System.Collections.Generic.IReadOnlyList{`0},System.Int32,System.Int32,System.Nullable{System.Int32})">
+            <summary>A page of brewery results and its pagination metadata.</summary>
+            <typeparam name="T">Type of each item in the result page.</typeparam>
+            <param name="Breweries">Items on the current page.</param>
+            <param name="Page">One-based current page number.</param>
+            <param name="PageSize">Maximum number of items per page.</param>
+            <param name="TotalCount">Total matching item count, when supplied by the data source.</param>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.PagedResponse`1.Breweries">
+            <summary>Items on the current page.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.PagedResponse`1.Page">
+            <summary>One-based current page number.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.PagedResponse`1.PageSize">
+            <summary>Maximum number of items per page.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.PagedResponse`1.TotalCount">
+            <summary>Total matching item count, when supplied by the data source.</summary>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Domain.AutocompleteFilter">
+            <summary>Maps a query parameter from an external brewery record to a value.</summary>
+            <param name="QueryParameter">External API query parameter name.</param>
+            <param name="Selector">Selects the corresponding value from a brewery record.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.AutocompleteFilter.#ctor(System.String,System.Func{ElfBeauty.BreweryApi.Domain.Entities.SourceBrewery,System.String})">
+            <summary>Maps a query parameter from an external brewery record to a value.</summary>
+            <param name="QueryParameter">External API query parameter name.</param>
+            <param name="Selector">Selects the corresponding value from a brewery record.</param>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.AutocompleteFilter.QueryParameter">
+            <summary>External API query parameter name.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.AutocompleteFilter.Selector">
+            <summary>Selects the corresponding value from a brewery record.</summary>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Domain.BreweryWithDistance">
+            <summary>A brewery and its calculated distance from a search coordinate.</summary>
+            <param name="Brewery">Brewery details.</param>
+            <param name="DistanceKilometres">Distance in kilometres, or null when coordinates are unavailable.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.BreweryWithDistance.#ctor(ElfBeauty.BreweryApi.Domain.Models.BreweryResponse,System.Nullable{System.Double})">
+            <summary>A brewery and its calculated distance from a search coordinate.</summary>
+            <param name="Brewery">Brewery details.</param>
+            <param name="DistanceKilometres">Distance in kilometres, or null when coordinates are unavailable.</param>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.BreweryWithDistance.Brewery">
+            <summary>Brewery details.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.BreweryWithDistance.DistanceKilometres">
+            <summary>Distance in kilometres, or null when coordinates are unavailable.</summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(ElfBeauty.BreweryApi.Domain.Models.BreweryQuery)">
+            <summary>
+            Validates supported sorting, pagination and coordinates.
+            </summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.ValidateAutocomplete(System.String,System.Int32)">
+            <summary>
+            Validates brewery autocomplete input.
+            </summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.IsDistanceSort(ElfBeauty.BreweryApi.Domain.Models.BreweryQuery)">
+            <summary>
+            Determines whether the current request requires distance-based sorting.
+            </summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Interfaces.IBreweryService.GetAsync(ElfBeauty.BreweryApi.Domain.Models.BreweryQuery,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a page of breweries from Open Brewery DB, using the query cache when available.
+            </summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Interfaces.IOpenBreweryClient.QueryAsync(ElfBeauty.BreweryApi.Domain.Models.BreweryQuery,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a requested page directly from Open Brewery DB.
+            </summary>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Interfaces.IOpenBreweryClient.AutocompleteAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves brewery name suggestions directly from Open Brewery DB.
+            </summary>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery">
+            <summary>Filtering, sorting, coordinate, and pagination options for a brewery search.</summary>
+            <param name="Search">Optional search text matched against brewery names.</param>
+            <param name="Name">Optional brewery-name filter; takes precedence over <paramref name="Search"/>.</param>
+            <param name="City">Optional city filter.</param>
+            <param name="SortBy">Optional sort field: <c>name</c>, <c>city</c>, or <c>distance</c>.</param>
+            <param name="SortDirection">Sort direction, either <c>asc</c> or <c>desc</c>; defaults to <c>asc</c>.</param>
+            <param name="Page">One-based page number; defaults to 1.</param>
+            <param name="PageSize">Number of results per page, from 1 to 200; defaults to 50.</param>
+            <param name="Latitude">Latitude for distance sorting, between -90 and 90.</param>
+            <param name="Longitude">Longitude for distance sorting, between -180 and 180.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>Filtering, sorting, coordinate, and pagination options for a brewery search.</summary>
+            <param name="Search">Optional search text matched against brewery names.</param>
+            <param name="Name">Optional brewery-name filter; takes precedence over <paramref name="Search"/>.</param>
+            <param name="City">Optional city filter.</param>
+            <param name="SortBy">Optional sort field: <c>name</c>, <c>city</c>, or <c>distance</c>.</param>
+            <param name="SortDirection">Sort direction, either <c>asc</c> or <c>desc</c>; defaults to <c>asc</c>.</param>
+            <param name="Page">One-based page number; defaults to 1.</param>
+            <param name="PageSize">Number of results per page, from 1 to 200; defaults to 50.</param>
+            <param name="Latitude">Latitude for distance sorting, between -90 and 90.</param>
+            <param name="Longitude">Longitude for distance sorting, between -180 and 180.</param>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.Search">
+            <summary>Optional search text matched against brewery names.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.Name">
+            <summary>Optional brewery-name filter; takes precedence over <paramref name="Search"/>.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.City">
+            <summary>Optional city filter.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.SortBy">
+            <summary>Optional sort field: <c>name</c>, <c>city</c>, or <c>distance</c>.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.SortDirection">
+            <summary>Sort direction, either <c>asc</c> or <c>desc</c>; defaults to <c>asc</c>.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.Page">
+            <summary>One-based page number; defaults to 1.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.PageSize">
+            <summary>Number of results per page, from 1 to 200; defaults to 50.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.Latitude">
+            <summary>Latitude for distance sorting, between -90 and 90.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryQuery.Longitude">
+            <summary>Longitude for distance sorting, between -180 and 180.</summary>
+        </member>
+        <member name="T:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse">
+            <summary>Public brewery details returned by the brewery API.</summary>
+            <param name="Id">Unique brewery identifier.</param>
+            <param name="Name">Brewery name.</param>
+            <param name="BreweryType">Brewery classification.</param>
+            <param name="Address1">First address line, if available.</param>
+            <param name="Address2">Second address line, if available.</param>
+            <param name="Address3">Third address line, if available.</param>
+            <param name="City">City where the brewery is located.</param>
+            <param name="StateProvince">State or province where the brewery is located.</param>
+            <param name="PostalCode">Postal code, if available.</param>
+            <param name="Country">Country where the brewery is located.</param>
+            <param name="Longitude">Longitude, if available.</param>
+            <param name="Latitude">Latitude, if available.</param>
+            <param name="Phone">Contact phone number, if available.</param>
+            <param name="WebsiteUrl">Website URL, if available.</param>
+            <param name="State">State name, if available.</param>
+            <param name="Street">Street address, if available.</param>
+            <param name="Distance">Distance from the requested coordinates when sorting by distance.</param>
+        </member>
+        <member name="M:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.String,System.String,System.String,System.String)">
+            <summary>Public brewery details returned by the brewery API.</summary>
+            <param name="Id">Unique brewery identifier.</param>
+            <param name="Name">Brewery name.</param>
+            <param name="BreweryType">Brewery classification.</param>
+            <param name="Address1">First address line, if available.</param>
+            <param name="Address2">Second address line, if available.</param>
+            <param name="Address3">Third address line, if available.</param>
+            <param name="City">City where the brewery is located.</param>
+            <param name="StateProvince">State or province where the brewery is located.</param>
+            <param name="PostalCode">Postal code, if available.</param>
+            <param name="Country">Country where the brewery is located.</param>
+            <param name="Longitude">Longitude, if available.</param>
+            <param name="Latitude">Latitude, if available.</param>
+            <param name="Phone">Contact phone number, if available.</param>
+            <param name="WebsiteUrl">Website URL, if available.</param>
+            <param name="State">State name, if available.</param>
+            <param name="Street">Street address, if available.</param>
+            <param name="Distance">Distance from the requested coordinates when sorting by distance.</param>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Id">
+            <summary>Unique brewery identifier.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Name">
+            <summary>Brewery name.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.BreweryType">
+            <summary>Brewery classification.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Address1">
+            <summary>First address line, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Address2">
+            <summary>Second address line, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Address3">
+            <summary>Third address line, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.City">
+            <summary>City where the brewery is located.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.StateProvince">
+            <summary>State or province where the brewery is located.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.PostalCode">
+            <summary>Postal code, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Country">
+            <summary>Country where the brewery is located.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Longitude">
+            <summary>Longitude, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Latitude">
+            <summary>Latitude, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Phone">
+            <summary>Contact phone number, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.WebsiteUrl">
+            <summary>Website URL, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.State">
+            <summary>State name, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Street">
+            <summary>Street address, if available.</summary>
+        </member>
+        <member name="P:ElfBeauty.BreweryApi.Domain.Models.BreweryResponse.Distance">
+            <summary>Distance from the requested coordinates when sorting by distance.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1307 @@
+2026-11-03 08:07:32.017 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 7.5654 ms
+2026-11-03 08:07:51.210 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 15.2828 ms
+2026-11-03 08:38:08.427 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 08:38:08.506 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 08:38:08.507 +05:30 [INF] Hosting environment: Development
+2026-11-03 08:38:08.508 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 08:38:18.726 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 181.7020 ms
+2026-11-03 08:38:18.825 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.3049 ms
+2026-11-03 08:38:18.884 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 61.0980 ms
+2026-11-03 08:38:18.884 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 61.0994 ms
+2026-11-03 08:38:18.884 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 61.0865 ms
+2026-11-03 08:38:18.884 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 61.4890 ms
+2026-11-03 08:38:19.618 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 375.3216 ms
+2026-11-03 08:38:45.856 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.8752 ms
+2026-11-03 08:38:53.304 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 11.6689 ms
+2026-11-03 08:42:25.348 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.7063 ms
+2026-11-03 08:42:40.597 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 9.1454 ms
+2026-11-03 08:43:13.093 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.0059 ms
+2026-11-03 08:57:10.473 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 08:57:10.517 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 50.1384 ms
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Auth.Services.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 92
+   at BreweryApi.Auth.Services.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 21
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 08:57:10.547 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPAUPTDJ7L:00000001
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Auth.Services.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 92
+   at BreweryApi.Auth.Services.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 21
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 08:57:13.674 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 2.5305 ms
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Auth.Services.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 92
+   at BreweryApi.Auth.Services.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 21
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 08:57:13.676 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPAUPTDJ7L:00000002
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Auth.Services.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 92
+   at BreweryApi.Auth.Services.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Auth\Services\TokenService.cs:line 21
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:12:45.834 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 09:12:45.922 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 09:12:45.924 +05:30 [INF] Hosting environment: Development
+2026-11-03 09:12:45.925 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 09:12:47.991 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 259.0021 ms
+2026-11-03 09:12:48.124 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.7749 ms
+2026-11-03 09:12:48.209 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 116.2141 ms
+2026-11-03 09:12:48.210 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 117.0660 ms
+2026-11-03 09:12:48.210 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 115.8596 ms
+2026-11-03 09:12:48.223 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 109.2496 ms
+2026-11-03 09:12:49.094 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 516.5924 ms
+2026-11-03 09:13:11.205 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:13:11.239 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 44.2165 ms
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 95
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 24
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:13:11.282 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBI3FGRK2:00000003
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 95
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 24
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:13:13.232 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 3.0937 ms
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 95
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 24
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:13:13.234 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBI3FGRK2:00000004
+System.InvalidOperationException: Auth:Username must be configured outside source control.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 95
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 24
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:21:52.518 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 09:21:52.562 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 09:21:52.563 +05:30 [INF] Hosting environment: Development
+2026-11-03 09:21:52.566 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 09:21:53.996 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 260.1068 ms
+2026-11-03 09:21:54.084 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.4504 ms
+2026-11-03 09:21:54.141 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 64.3061 ms
+2026-11-03 09:21:54.141 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 64.3062 ms
+2026-11-03 09:21:54.141 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 55.9939 ms
+2026-11-03 09:21:54.143 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 65.5678 ms
+2026-11-03 09:21:54.795 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 380.1252 ms
+2026-11-03 09:22:15.174 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:22:15.206 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 39.0092 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 88
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 25
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:22:15.231 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBN67PF6I:00000003
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 88
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 25
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:34:48.994 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 09:34:49.036 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 09:34:49.037 +05:30 [INF] Hosting environment: Development
+2026-11-03 09:34:49.037 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 09:34:50.000 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 153.1944 ms
+2026-11-03 09:34:50.064 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.1557 ms
+2026-11-03 09:34:50.103 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 42.6271 ms
+2026-11-03 09:34:50.103 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 42.8197 ms
+2026-11-03 09:34:50.103 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 36.9528 ms
+2026-11-03 09:34:50.103 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 41.9538 ms
+2026-11-03 09:34:50.583 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 243.3327 ms
+2026-11-03 09:35:38.341 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:35:38.364 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 27.9899 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:35:38.425 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBUDHVCTU:00000003
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:36:18.140 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 09:36:18.197 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 09:36:18.199 +05:30 [INF] Hosting environment: Development
+2026-11-03 09:36:18.200 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 09:36:19.226 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 218.0027 ms
+2026-11-03 09:36:19.353 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.6206 ms
+2026-11-03 09:36:19.394 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 45.5289 ms
+2026-11-03 09:36:19.394 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 44.6196 ms
+2026-11-03 09:36:19.394 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 44.5035 ms
+2026-11-03 09:36:19.405 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 53.7271 ms
+2026-11-03 09:36:19.865 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 213.2826 ms
+2026-11-03 09:37:19.185 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 09:37:19.238 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 09:37:19.240 +05:30 [INF] Hosting environment: Development
+2026-11-03 09:37:19.241 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 09:37:23.092 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 318.9336 ms
+2026-11-03 09:37:23.284 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.8121 ms
+2026-11-03 09:37:23.351 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 128.5544 ms
+2026-11-03 09:37:23.351 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 131.8980 ms
+2026-11-03 09:37:23.352 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 120.5937 ms
+2026-11-03 09:37:23.355 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 129.3808 ms
+2026-11-03 09:37:25.040 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 478.9538 ms
+2026-11-03 09:37:53.161 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:37:53.192 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 38.8280 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:37:53.258 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBVQTCD3B:00000001
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:38:23.684 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 2.5819 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:38:23.687 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBVQTCD3B:00000002
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:38:40.361 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 7.5868 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:38:40.370 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBVQTCD3B:00000003
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 09:41:17.113 +05:30 [ERR] HTTP POST /api/auth/token responded 500 in 0.7377 ms
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:41:17.116 +05:30 [ERR] Request failed. StatusCode: 500, Method: POST, Path: /api/auth/token, TraceId: 0HNPPBVQTCD3C:00000001
+System.InvalidOperationException: Auth:Username must be configured.
+   at BreweryApi.Application.Service.TokenService.RequiredConfiguration(String key) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 172
+   at BreweryApi.Application.Service.TokenService..ctor(IConfiguration configuration, IHostEnvironment environment) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\TokenService.cs:line 26
+   at InvokeStub_TokenService..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 10:40:14.536 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 10:40:14.704 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 10:40:14.706 +05:30 [INF] Hosting environment: Development
+2026-11-03 10:40:14.708 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 10:40:24.469 +05:30 [INF] HTTP GET /swagger responded 301 in 276.1972 ms
+2026-11-03 10:40:25.013 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 247.7446 ms
+2026-11-03 10:40:25.407 +05:30 [INF] HTTP GET /swagger/index.js responded 200 in 2.6316 ms
+2026-11-03 10:40:25.618 +05:30 [INF] HTTP GET /swagger/index.css responded 200 in 413.5579 ms
+2026-11-03 10:40:25.636 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 440.2252 ms
+2026-11-03 10:40:25.753 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 544.3383 ms
+2026-11-03 10:40:25.759 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 356.1190 ms
+2026-11-03 10:40:27.510 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 850.1845 ms
+2026-11-03 10:40:52.319 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 10:40:52.748 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 458.4046 ms
+2026-11-03 10:41:32.072 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2560.5922ms
+2026-11-03 10:41:33.304 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1048.2799ms
+2026-11-03 10:41:34.368 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1021.6476ms
+2026-11-03 10:41:35.426 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 986.9099ms
+2026-11-03 10:41:37.005 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1213.6677ms
+2026-11-03 10:41:38.102 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1049.746ms
+2026-11-03 10:41:39.153 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 941.6555ms
+2026-11-03 10:41:40.139 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 947.3052ms
+2026-11-03 10:41:41.085 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 910.544ms
+2026-11-03 10:41:42.433 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1283.6092ms
+2026-11-03 10:41:43.870 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1298.5873ms
+2026-11-03 10:41:44.975 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 913.2929ms
+2026-11-03 10:41:46.014 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 994.8567ms
+2026-11-03 10:41:47.042 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 867.1741ms
+2026-11-03 10:41:48.007 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 954.1503ms
+2026-11-03 10:41:48.921 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 909.1091ms
+2026-11-03 10:41:50.008 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1052.1285ms
+2026-11-03 10:41:50.882 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 868.0808ms
+2026-11-03 10:41:51.818 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 909.1347ms
+2026-11-03 10:41:52.771 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 943.9355ms
+2026-11-03 10:41:53.736 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 951.0283ms
+2026-11-03 10:41:54.607 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 867.2324ms
+2026-11-03 10:41:55.593 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 980.3455ms
+2026-11-03 10:41:56.529 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 926.0092ms
+2026-11-03 10:41:57.978 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1440.3835ms
+2026-11-03 10:42:00.868 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2744.3952ms
+2026-11-03 10:42:01.981 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1107.1329ms
+2026-11-03 10:42:04.894 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2452.9225ms
+2026-11-03 10:42:06.035 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 942.3683ms
+2026-11-03 10:42:07.036 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 958.2691ms
+2026-11-03 10:42:09.448 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2237.2291ms
+2026-11-03 10:42:10.516 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 945.6315ms
+2026-11-03 10:42:11.627 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1085.4516ms
+2026-11-03 10:42:13.359 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1615.4117ms
+2026-11-03 10:42:14.893 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 875.7335ms
+2026-11-03 10:42:15.840 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 881.6326ms
+2026-11-03 10:42:17.256 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1300.3606ms
+2026-11-03 10:42:18.259 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 998.6571ms
+2026-11-03 10:42:19.272 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 978.9485ms
+2026-11-03 10:42:20.200 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 922.8378ms
+2026-11-03 10:42:21.238 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 933.024ms
+2026-11-03 10:42:22.241 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 921.2483ms
+2026-11-03 10:42:23.186 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 908.3098ms
+2026-11-03 10:42:24.890 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1655.6913ms
+2026-11-03 10:42:25.983 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1013.0129ms
+2026-11-03 10:42:27.192 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 965.3387ms
+2026-11-03 10:42:28.266 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1068.834ms
+2026-11-03 10:42:29.400 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1003.0406ms
+2026-11-03 10:42:30.274 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 862.5944ms
+2026-11-03 10:42:31.369 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1063.2451ms
+2026-11-03 10:42:32.305 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 930.4624ms
+2026-11-03 10:42:33.361 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1015.2169ms
+2026-11-03 10:42:34.242 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 870.9876ms
+2026-11-03 10:42:35.204 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 930.2121ms
+2026-11-03 10:42:37.051 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1837.4573ms
+2026-11-03 10:42:38.239 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 953.49ms
+2026-11-03 10:42:39.864 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 907.2613ms
+2026-11-03 10:42:41.217 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1292.1476ms
+2026-11-03 10:42:42.419 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1062.5944ms
+2026-11-03 10:42:43.806 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1181.561ms
+2026-11-03 10:42:45.446 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1635.2972ms
+2026-11-03 10:42:46.605 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1030.8025ms
+2026-11-03 10:42:47.735 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 917.7326ms
+2026-11-03 10:42:48.685 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 910.6792ms
+2026-11-03 10:42:48.859 +05:30 [ERR] HTTP GET /api/v2/breweries responded 500 in 80183.4656 ms
+System.InvalidOperationException: Value must be set.
+   at Microsoft.Data.Sqlite.SqliteParameter.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteParameterCollection.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 213
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 28
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 10:42:48.941 +05:30 [ERR] Request failed. StatusCode: 500, Method: GET, Path: /api/v2/breweries, TraceId: 0HNPPD31BOKNU:00000002
+System.InvalidOperationException: Value must be set.
+   at Microsoft.Data.Sqlite.SqliteParameter.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteParameterCollection.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 213
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 28
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 10:43:00.355 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 366.7863ms
+2026-11-03 10:43:00.692 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 218.1009ms
+2026-11-03 10:43:00.973 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 217.3383ms
+2026-11-03 10:43:01.253 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 238.9465ms
+2026-11-03 10:43:01.509 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 234.698ms
+2026-11-03 10:43:01.733 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 215.1294ms
+2026-11-03 10:43:01.952 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 208.517ms
+2026-11-03 10:43:02.176 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 216.5736ms
+2026-11-03 10:43:02.396 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 211.7586ms
+2026-11-03 10:43:03.366 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 963.0304ms
+2026-11-03 10:43:04.021 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 646.1998ms
+2026-11-03 10:43:04.328 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 302.3173ms
+2026-11-03 10:43:04.587 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 230.1788ms
+2026-11-03 10:43:04.805 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 212.665ms
+2026-11-03 10:43:05.042 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 229.4081ms
+2026-11-03 10:43:05.321 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 251.1294ms
+2026-11-03 10:43:05.573 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 235.6141ms
+2026-11-03 10:43:05.815 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 225.0479ms
+2026-11-03 10:43:06.052 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 225.6834ms
+2026-11-03 10:43:06.383 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 322.2384ms
+2026-11-03 10:43:06.606 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 213.4042ms
+2026-11-03 10:43:06.837 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 205.8139ms
+2026-11-03 10:43:07.108 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 255.2556ms
+2026-11-03 10:43:07.346 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 222.4728ms
+2026-11-03 10:43:08.221 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 864.088ms
+2026-11-03 10:43:09.082 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 854.6363ms
+2026-11-03 10:43:09.455 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 299.6884ms
+2026-11-03 10:43:09.721 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 215.8943ms
+2026-11-03 10:43:09.981 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 212.4754ms
+2026-11-03 10:43:10.244 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 228.8344ms
+2026-11-03 10:43:10.477 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 222.6144ms
+2026-11-03 10:43:10.696 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 208.3712ms
+2026-11-03 10:43:11.018 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 268.5991ms
+2026-11-03 10:43:11.242 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 218.596ms
+2026-11-03 10:43:11.471 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 219.195ms
+2026-11-03 10:43:11.694 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 216.5223ms
+2026-11-03 10:43:11.932 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 216.2099ms
+2026-11-03 10:43:12.169 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 223.9077ms
+2026-11-03 10:43:12.371 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 197.1337ms
+2026-11-03 10:43:13.202 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 811.0736ms
+2026-11-03 10:43:13.438 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 231.6405ms
+2026-11-03 10:43:14.408 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 346.2249ms
+2026-11-03 10:43:14.692 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 218.1499ms
+2026-11-03 10:43:14.956 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 222.2208ms
+2026-11-03 10:43:15.215 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 224.5635ms
+2026-11-03 10:43:15.452 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 225.475ms
+2026-11-03 10:43:15.677 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 217.8899ms
+2026-11-03 10:43:16.007 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 321.4987ms
+2026-11-03 10:43:16.232 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 219.6112ms
+2026-11-03 10:43:16.470 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 217.196ms
+2026-11-03 10:43:16.685 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 209.0722ms
+2026-11-03 10:43:16.922 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 218.1219ms
+2026-11-03 10:43:17.141 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 209.4323ms
+2026-11-03 10:43:17.374 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 213.5928ms
+2026-11-03 10:43:17.765 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 384.114ms
+2026-11-03 10:43:18.087 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 314.1888ms
+2026-11-03 10:43:18.319 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 224.7868ms
+2026-11-03 10:43:18.940 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 616.2396ms
+2026-11-03 10:43:19.171 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 227.0305ms
+2026-11-03 10:43:20.146 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 911.358ms
+2026-11-03 10:43:20.376 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 222.8503ms
+2026-11-03 10:43:20.640 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 223.0499ms
+2026-11-03 10:43:20.858 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 213.3031ms
+2026-11-03 10:43:21.064 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 201.2912ms
+2026-11-03 10:43:21.093 +05:30 [ERR] HTTP GET /api/v2/breweries responded 500 in 21189.5247 ms
+System.InvalidOperationException: Value must be set.
+   at Microsoft.Data.Sqlite.SqliteParameter.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteParameterCollection.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 213
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 28
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 10:43:21.102 +05:30 [ERR] Request failed. StatusCode: 500, Method: GET, Path: /api/v2/breweries, TraceId: 0HNPPD31BOKNU:00000003
+System.InvalidOperationException: Value must be set.
+   at Microsoft.Data.Sqlite.SqliteParameter.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteParameterCollection.Bind(sqlite3_stmt stmt, sqlite3 handle)
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 213
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 227
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 28
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi\Middleware\ExceptionHandlingMiddleware.cs:line 20
+2026-11-03 10:46:54.716 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 174.4331 ms
+2026-11-03 10:47:22.800 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 46.6703 ms
+2026-11-03 10:50:16.103 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 43.5295 ms
+2026-11-03 11:00:57.724 +05:30 [INF] HTTP GET /health responded 200 in 94.3021 ms
+2026-11-03 11:03:52.649 +05:30 [INF] HTTP GET /health responded 200 in 1.1282 ms
+2026-11-03 11:08:30.494 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 11:08:30.580 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 11:08:30.581 +05:30 [INF] Hosting environment: Development
+2026-11-03 11:08:30.583 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 11:08:32.803 +05:30 [INF] HTTP GET /swagger responded 301 in 122.3078 ms
+2026-11-03 11:08:33.051 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 162.0319 ms
+2026-11-03 11:08:33.124 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.3048 ms
+2026-11-03 11:08:33.191 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 70.1528 ms
+2026-11-03 11:08:33.192 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 87.2200 ms
+2026-11-03 11:08:33.192 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 91.0376 ms
+2026-11-03 11:08:33.195 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 88.6865 ms
+2026-11-03 11:08:34.309 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 599.9069 ms
+2026-11-03 11:13:51.443 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 11:13:51.527 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 11:13:51.531 +05:30 [INF] Hosting environment: Development
+2026-11-03 11:13:51.532 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 11:13:53.503 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 228.7612 ms
+2026-11-03 11:13:53.618 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 2.7507 ms
+2026-11-03 11:13:53.683 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 70.1141 ms
+2026-11-03 11:13:53.683 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 70.4301 ms
+2026-11-03 11:13:53.683 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 70.3833 ms
+2026-11-03 11:13:53.684 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 72.3498 ms
+2026-11-03 11:13:54.699 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 447.4323 ms
+2026-11-03 11:15:58.057 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 11:15:58.072 +05:30 [WRN] HTTP GET / responded 404 in 19.8949 ms
+2026-11-03 11:16:12.743 +05:30 [INF] HTTP GET /health responded 200 in 212.6602 ms
+2026-11-03 11:21:08.494 +05:30 [WRN] HTTP GET / responded 404 in 2.9326 ms
+2026-11-03 11:21:17.037 +05:30 [INF] HTTP GET /health responded 200 in 0.6269 ms
+2026-11-03 11:21:25.632 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-03 11:21:25.634 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 23.8183 ms
+2026-11-03 11:22:11.675 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 44.0867 ms
+2026-11-03 11:22:24.814 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 336.0407 ms
+2026-11-03 11:22:25.213 +05:30 [INF] HTTP GET /health responded 200 in 0.4725 ms
+2026-11-03 11:22:29.023 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 3383.2019ms
+2026-11-03 11:22:31.983 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 940.5503ms
+2026-11-03 11:22:33.073 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1056.9819ms
+2026-11-03 11:22:34.195 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 998.8478ms
+2026-11-03 11:22:35.146 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 948.2168ms
+2026-11-03 11:22:36.059 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 886.011ms
+2026-11-03 11:22:37.242 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1173.5676ms
+2026-11-03 11:22:39.410 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2148.9706ms
+2026-11-03 11:22:40.633 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1149.757ms
+2026-11-03 11:22:41.499 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 812.3294ms
+2026-11-03 11:22:43.845 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 934.7516ms
+2026-11-03 11:22:47.111 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2387.7526ms
+2026-11-03 11:22:49.903 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2789.507ms
+2026-11-03 11:22:52.351 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2444.8744ms
+2026-11-03 11:22:53.928 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1533.6906ms
+2026-11-03 11:22:56.785 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2852.1703ms
+2026-11-03 11:23:02.478 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 5605.7295ms
+2026-11-03 11:23:07.019 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2662.8774ms
+2026-11-03 11:23:17.467 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 5015.9948ms
+2026-11-03 11:23:26.977 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: 'The operation was canceled.', Handled: 'false', Attempt: '0', Execution Time: 9508.5526ms
+System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Resilience.ResilienceHandler.<>c.<<SendAsync>b__3_0>d.MoveNext()
+2026-11-03 11:23:26.991 +05:30 [ERR] HTTP GET /api/v2/breweries responded 500 in 51881.8428 ms
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.SemaphoreSlim.WaitUntilCountOrTimeoutAsync(TaskNode asyncWaiter, Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 123
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 30
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 11:23:27.007 +05:30 [ERR] HTTP GET /api/v2/breweries responded 500 in 61715.9224 ms
+System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Resilience.ResilienceHandler.<>c.<<SendAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.ThrowIfException()
+   at Microsoft.Extensions.Http.Resilience.ResilienceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BreweryApi.Infrastructure.OpenBreweryClient.QueryAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\OpenBreweryClient.cs:line 22
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 137
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.EnsureCatalogAsync(CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 229
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in c:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 30
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 11:23:27.020 +05:30 [INF] Request was cancelled. TraceId: 0HNPPDLOPLN3O:00000001
+2026-11-03 11:23:27.022 +05:30 [INF] Request was cancelled. TraceId: 0HNPPDLOPLN3N:00000001
+2026-11-03 11:23:38.236 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 407.5097ms
+2026-11-03 11:23:38.489 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 209.5009ms
+2026-11-03 11:23:40.154 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 292.4232ms
+2026-11-03 11:23:40.427 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 239.1861ms
+2026-11-03 11:23:40.645 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 215.1871ms
+2026-11-03 11:23:40.872 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 224.0446ms
+2026-11-03 11:23:41.125 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 248.2439ms
+2026-11-03 11:23:41.349 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 215.8491ms
+2026-11-03 11:23:41.581 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 225.0543ms
+2026-11-03 11:23:41.882 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 298.3326ms
+2026-11-03 11:23:42.103 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 217.7822ms
+2026-11-03 11:23:42.429 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 322.7981ms
+2026-11-03 11:23:42.638 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 205.8065ms
+2026-11-03 11:23:42.915 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 250.5293ms
+2026-11-03 11:23:43.159 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 213.8474ms
+2026-11-03 11:23:43.377 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 215.3535ms
+2026-11-03 11:23:43.992 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 612.0433ms
+2026-11-03 11:23:44.335 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 341.2293ms
+2026-11-03 11:23:45.336 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 963.3826ms
+2026-11-03 11:23:45.701 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 361.9468ms
+2026-11-03 11:23:46.650 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 885.1734ms
+2026-11-03 11:23:47.727 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1003.8216ms
+2026-11-03 11:23:48.733 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 929.8789ms
+2026-11-03 11:23:49.724 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 928.2106ms
+2026-11-03 11:23:50.710 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 930.6452ms
+2026-11-03 11:23:51.301 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 540.2194ms
+2026-11-03 11:23:52.344 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 989.6041ms
+2026-11-03 11:23:53.261 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 891.7407ms
+2026-11-03 11:23:54.282 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 960.7925ms
+2026-11-03 11:23:55.196 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 881.2052ms
+2026-11-03 11:23:56.188 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 951.7885ms
+2026-11-03 11:23:57.249 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1027.7405ms
+2026-11-03 11:23:58.268 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 964.9064ms
+2026-11-03 11:24:00.384 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2044.4365ms
+2026-11-03 11:24:01.501 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 981.7244ms
+2026-11-03 11:24:03.435 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1713.7299ms
+2026-11-03 11:24:05.162 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 950.4424ms
+2026-11-03 11:24:06.136 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 972.1528ms
+2026-11-03 11:24:07.334 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1045.3117ms
+2026-11-03 11:24:08.460 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1124.2517ms
+2026-11-03 11:24:09.690 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1228.1892ms
+2026-11-03 11:24:10.768 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 850.9565ms
+2026-11-03 11:24:11.824 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1026.8677ms
+2026-11-03 11:24:13.117 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1135.7637ms
+2026-11-03 11:24:14.081 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 960.9042ms
+2026-11-03 11:24:15.029 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 895.5602ms
+2026-11-03 11:24:16.110 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1054.9895ms
+2026-11-03 11:24:17.280 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1169.1094ms
+2026-11-03 11:24:18.365 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1060.1933ms
+2026-11-03 11:24:19.389 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1022.8724ms
+2026-11-03 11:24:20.376 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 986.5148ms
+2026-11-03 11:24:21.393 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1014.868ms
+2026-11-03 11:24:22.301 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 906.3563ms
+2026-11-03 11:24:23.261 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 929.1898ms
+2026-11-03 11:24:25.209 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1922.0138ms
+2026-11-03 11:24:26.346 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 957.2729ms
+2026-11-03 11:24:27.488 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 905.6227ms
+2026-11-03 11:24:28.468 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 968.0507ms
+2026-11-03 11:24:30.115 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1120.6125ms
+2026-11-03 11:24:31.442 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1322.7733ms
+2026-11-03 11:24:33.105 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 924.2666ms
+2026-11-03 11:24:34.100 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 963.7909ms
+2026-11-03 11:24:35.202 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 986.0666ms
+2026-11-03 11:24:36.215 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 991.6465ms
+2026-11-03 11:24:36.241 +05:30 [WRN] The upstream brewery record 97f86746-ac71-4c47-9506-2af55f1b5614 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.258 +05:30 [WRN] The upstream brewery record 6cc66ce4-e9d2-42e1-931c-57f7bbbb981e has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.269 +05:30 [WRN] The upstream brewery record 3ab8f536-6600-4697-81f8-9c4d7624dd80 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.275 +05:30 [WRN] The upstream brewery record 745b77bb-ed5d-4b4f-b19a-aed5083f7dd2 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.279 +05:30 [WRN] The upstream brewery record c28a02b2-6f9a-4f23-ae99-7d515b6286b1 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.281 +05:30 [WRN] The upstream brewery record 8c086556-46ca-4de0-be76-e705d2f8b625 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.286 +05:30 [WRN] The upstream brewery record 733b274f-0c48-4520-8d1d-266cbcd7cff1 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.287 +05:30 [WRN] The upstream brewery record fc53d151-544b-4e4b-93d5-c5d3b3684e04 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.287 +05:30 [WRN] The upstream brewery record 75377635-6904-4beb-90ef-d7bf33855b85 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.288 +05:30 [WRN] The upstream brewery record a41ee41d-d6d7-4f4d-ab63-a0aaa00c2412 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.289 +05:30 [WRN] The upstream brewery record 4b26f3b5-bd40-4af4-9b15-3073f22d4a76 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.289 +05:30 [WRN] The upstream brewery record b375beed-5ce0-408f-9ed7-1d2149482a84 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.290 +05:30 [WRN] The upstream brewery record 6266e7e0-e789-46cb-b678-d8e92e58a6d9 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.290 +05:30 [WRN] The upstream brewery record 6892e759-67eb-4e45-8935-41562512e524 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.291 +05:30 [WRN] The upstream brewery record a37d766a-2b0f-42e1-be28-77ab4dcc033b has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.292 +05:30 [WRN] The upstream brewery record 5375b58e-6a15-49b5-89de-f74a54d3f85e has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.293 +05:30 [WRN] The upstream brewery record d9e36cbf-19c8-4fa5-ac61-017781a80f75 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.293 +05:30 [WRN] The upstream brewery record 6161bc23-36b0-415c-bc9f-48fdb5e9af89 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.293 +05:30 [WRN] The upstream brewery record 3e2687f0-fccc-4e33-a6e1-19d593c8bc5f has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.294 +05:30 [WRN] The upstream brewery record ee439927-bc7b-4e6a-849e-ec994b310341 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.294 +05:30 [WRN] The upstream brewery record 01813936-f06b-4d85-9979-2e493997d845 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.295 +05:30 [WRN] The upstream brewery record f14a8e40-6555-45d9-9129-6a99b9e036dd has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.300 +05:30 [WRN] The upstream brewery record 8261a990-753f-4056-920d-7a4d18a47efc has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.302 +05:30 [WRN] The upstream brewery record dd08daaa-d0d0-4e18-94b1-965a6954bf59 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.303 +05:30 [WRN] The upstream brewery record 6377454c-4ec0-42d2-9beb-40f8bb4a621f has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.307 +05:30 [WRN] The upstream brewery record 9d61b87a-3f0e-4d19-9b1d-27a3c6995e35 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.311 +05:30 [WRN] The upstream brewery record 34b89a50-983a-482a-b8ff-ef29f16b14b2 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.313 +05:30 [WRN] The upstream brewery record b17edb74-702f-4161-a650-0b0b180b6f77 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.323 +05:30 [WRN] The upstream brewery record 44759819-557b-4676-8f1d-2169f113f2ba has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.325 +05:30 [WRN] The upstream brewery record cf4872cf-385a-4a81-b6f7-d45cb9664831 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.326 +05:30 [WRN] The upstream brewery record cd804781-2876-4779-b954-3a31ebcaa2d7 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.344 +05:30 [WRN] The upstream brewery record 0aa08603-b582-493f-9b6e-d72c69c8549c has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.350 +05:30 [WRN] The upstream brewery record 7b9c90f3-c954-4c72-afbe-12be62f4115b has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.351 +05:30 [WRN] The upstream brewery record 19c9f99f-9e24-4012-91fc-b6e5552240a4 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.352 +05:30 [WRN] The upstream brewery record fabb921b-5220-4a0d-ba9e-fa751f2c269c has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.354 +05:30 [WRN] The upstream brewery record 720ccd82-d7c7-4ea8-9003-a986928f4cd6 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.354 +05:30 [WRN] The upstream brewery record 23fee3d1-8714-4b48-afa3-1b8570e2dda4 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.356 +05:30 [WRN] The upstream brewery record 7ecc94d0-333b-4943-ad65-37e0278e1dfe has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.362 +05:30 [WRN] The upstream brewery record 2bf5c5d2-a76b-4480-bc67-bac4e6669a17 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.364 +05:30 [WRN] The upstream brewery record 71df61ab-e8b0-4b7f-990c-4bd1e6ec0d8d has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.371 +05:30 [WRN] The upstream brewery record 318c0b26-f3d2-4fb0-81e4-b111ad5446af has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.374 +05:30 [WRN] The upstream brewery record b36e7174-a457-41d7-b0b6-d8e348a91c78 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.386 +05:30 [WRN] The upstream brewery record 70d051c1-f62a-44d1-8e38-d4ab646c8dd7 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.390 +05:30 [WRN] The upstream brewery record 2ea0ad49-8635-45c3-8cf7-295edc006c1a has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.406 +05:30 [WRN] The upstream brewery record 9eff9e7a-de04-44be-beca-f7c7ed78d2bd has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.410 +05:30 [WRN] The upstream brewery record 131a4db9-9d7d-4b8c-879c-9b3738f6cde4 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.410 +05:30 [WRN] The upstream brewery record 182beabb-d182-487f-abea-f37c451f873c has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.429 +05:30 [WRN] The upstream brewery record 6d9de43b-48e1-4dfe-9d39-2decbfd1b30b has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.445 +05:30 [WRN] The upstream brewery record 36b3fef0-27b4-4719-b2c8-d97aabea050e has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.464 +05:30 [WRN] The upstream brewery record 169eee56-a812-470a-bab6-ab2f49a4fcec has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.477 +05:30 [WRN] The upstream brewery record ca3ff0e4-8fa4-4e60-8b21-5d55a7551a30 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.508 +05:30 [WRN] The upstream brewery record 89e681cf-c831-4927-a643-a69729c015ae has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.522 +05:30 [WRN] The upstream brewery record d318222a-534d-4d4f-87df-668711973625 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.523 +05:30 [WRN] The upstream brewery record 4a9dfc6a-0418-414a-bdde-90eed4186d8e has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.537 +05:30 [WRN] The upstream brewery record 91459799-8827-462c-9421-f8eb1947d930 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.541 +05:30 [WRN] The upstream brewery record a722df6d-b3a3-43c2-be8c-dec73fac8e95 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.554 +05:30 [WRN] The upstream brewery record 630b0112-e1ad-4e3f-9e53-7067d5b0ee27 has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.568 +05:30 [WRN] The upstream brewery record d9b25f27-0431-450d-ae11-adb3697d56fe has no PostalCode; storing an empty value.
+2026-11-03 11:24:36.631 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 58809.2984 ms
+2026-11-03 11:30:44.566 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 11:30:44.623 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 11:30:44.625 +05:30 [INF] Hosting environment: Development
+2026-11-03 11:30:44.626 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi
+2026-11-03 11:30:46.407 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 11:30:46.450 +05:30 [INF] HTTP GET /health responded 200 in 131.2941 ms
+2026-11-03 11:31:22.314 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 320.3293 ms
+2026-11-03 11:31:22.841 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-03 11:31:22.884 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 403 in 259.2547 ms
+2026-11-03 11:32:59.867 +05:30 [INF] HTTP GET /health responded 200 in 1.1749 ms
+2026-11-03 11:33:00.254 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 62.8675 ms
+2026-11-03 11:33:00.975 +05:30 [INF] HTTP GET /api/v2/breweries/autocomplete responded 200 in 291.6549 ms
+2026-11-03 11:36:01.789 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 25.9194 ms
+2026-11-03 11:36:01.955 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 122.0342 ms
+2026-11-03 11:36:13.720 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 357.8857 ms
+2026-11-03 11:38:11.494 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 12.6749 ms
+2026-11-03 11:38:13.817 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 10.8564 ms
+2026-11-03 17:55:36.183 +05:30 [INF] Now listening on: http://localhost:5002
+2026-11-03 17:55:36.256 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-03 17:55:36.257 +05:30 [INF] Hosting environment: Development
+2026-11-03 17:55:36.259 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi
+2026-11-03 17:55:37.790 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 213.3147 ms
+2026-11-03 17:55:37.898 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.7179 ms
+2026-11-03 17:55:37.992 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 108.3192 ms
+2026-11-03 17:55:37.992 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 112.8227 ms
+2026-11-03 17:55:37.993 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 113.2737 ms
+2026-11-03 17:55:37.993 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 108.7850 ms
+2026-11-03 17:55:38.619 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 369.6494 ms
+2026-11-03 17:55:42.736 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 14.6764 ms
+2026-11-03 17:57:34.478 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.3110 ms
+2026-11-03 17:57:38.427 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 24.3841 ms
+2026-11-03 17:58:14.881 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 17:58:15.046 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 172.1365 ms
+2026-11-03 17:58:15.559 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 230.4012 ms
+2026-11-03 17:58:31.045 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 19.1755 ms
+2026-11-03 17:58:45.752 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 20.8845 ms
+2026-11-03 17:58:55.219 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 14.2867 ms
+2026-11-03 17:59:06.415 +05:30 [ERR] HTTP GET /api/v2/breweries responded 500 in 12.3941 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Infrastructure.SqliteBreweryCatalogService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\SqliteBreweryCatalogService.cs:line 29
+   at lambda_method13(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 17:59:06.443 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v2/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPPKM8EKE7E:00000005
+2026-11-03 17:59:22.998 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 9.2948 ms
+2026-11-03 17:59:26.810 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 14.3216 ms
+2026-11-03 17:59:36.180 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 10.7678 ms
+2026-11-03 17:59:38.824 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 13.1021 ms
+2026-11-03 17:59:40.962 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 11.4265 ms
+2026-11-03 18:06:52.310 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 19.8005 ms
+2026-11-03 18:07:03.432 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 17.5552 ms
+2026-11-03 18:07:03.709 +05:30 [WRN] HTTP GET /swagger/docs/brewery responded 404 in 0.9223 ms
+2026-11-03 18:07:04.077 +05:30 [WRN] HTTP GET /swagger/docs/brewery/swagger.json responded 404 in 0.2015 ms
+2026-11-03 18:07:04.300 +05:30 [WRN] HTTP GET /swagger/docs responded 404 in 0.3601 ms
+2026-11-03 18:07:04.570 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 13.0190 ms
+2026-11-03 18:07:15.066 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 9.8430 ms
+2026-11-03 18:07:42.268 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 4.4511 ms
+2026-11-03 18:07:57.413 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 13.1588 ms
+2026-11-03 18:07:57.763 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 50.1452 ms
+2026-11-03 18:07:57.903 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 58.1860 ms
+2026-11-03 18:08:09.302 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 16.2923 ms
+2026-11-03 18:08:09.495 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 14.0619 ms
+2026-11-03 18:08:31.434 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 7.5408 ms
+2026-11-03 18:09:19.815 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 45.0657 ms
+2026-11-03 18:09:19.915 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-03 18:09:19.916 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 403 in 10.2502 ms
+2026-11-03 18:10:11.951 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 15.0962 ms
+2026-11-03 18:11:08.556 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 0.5018 ms
+2026-11-03 18:11:08.596 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 0.1360 ms
+2026-11-03 18:11:08.598 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 0.1146 ms
+2026-11-03 18:11:08.600 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 0.0890 ms
+2026-11-03 18:11:08.602 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 0.2753 ms
+2026-11-03 18:11:08.603 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.3750 ms
+2026-11-03 18:11:08.933 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 3.6786 ms
+2026-11-03 18:11:08.935 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 20.4926 ms
+2026-11-03 18:11:11.308 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 20.2488 ms
+2026-11-03 18:16:44.184 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 15.0719 ms
+2026-11-03 18:17:31.621 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 11.6988 ms
+2026-11-03 18:17:35.477 +05:30 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 8.4300 ms
+2026-11-03 18:20:12.526 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 29.4062 ms
+2026-11-03 18:20:12.771 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 32.6305 ms
+2026-11-03 18:21:07.182 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 270.1155 ms
+2026-11-03 18:21:17.026 +05:30 [INF] HTTP GET /api/v2/breweries responded 200 in 224.1934 ms

@@ -1,0 +1,7 @@
+node_modules/
+src/Brewery.Ui.Angular/.angular/
+src/Brewery.Ui.Angular/dist/
+tests/Brewery.Ui.Angular.Tests/playwright-report/
+tests/Brewery.Ui.Angular.Tests/test-results/
+
+.fake

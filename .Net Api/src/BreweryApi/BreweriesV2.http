@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:5001
+@token = paste-a-bearer-token-here
+
+### List breweries from the SQLite catalog
+GET {{baseUrl}}/api/v2/breweries?page=1&pageSize=50
+Authorization: Bearer {{token}}
+
+### Filter and sort the SQLite catalog
+GET {{baseUrl}}/api/v2/breweries?city=Denver&sortBy=name&sortDirection=asc&page=1&pageSize=20
+Authorization: Bearer {{token}}
+
+### Sort by distance
+GET {{baseUrl}}/api/v2/breweries?sortBy=distance&latitude=39.7392&longitude=-104.9903&page=1&pageSize=20
+Authorization: Bearer {{token}}
+
+### Autocomplete
+GET {{baseUrl}}/api/v2/breweries/autocomplete?term=den&limit=10
+Authorization: Bearer {{token}}
+
+### Unauthorized request (remove the Authorization header)
+GET {{baseUrl}}/api/v2/breweries

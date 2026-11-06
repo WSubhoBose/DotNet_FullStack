@@ -1,0 +1,7 @@
+{
+  "folders": [
+    { "name": "Angular app", "path": "src/Brewery.Ui.Angular" },
+    { "name": "Playwright tests", "path": "tests/Brewery.Ui.Angular.Tests" }
+  ],
+  "settings": {}
+}

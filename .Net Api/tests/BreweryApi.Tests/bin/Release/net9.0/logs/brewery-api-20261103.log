@@ -1,0 +1,90 @@
+2026-11-03 09:30:02.800 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 217.1934 ms
+2026-11-03 09:30:02.917 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:30:03.051 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 164.3904 ms
+2026-11-03 09:30:03.152 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 97.3122 ms
+2026-11-03 09:30:03.234 +05:30 [INF] HTTP POST /api/auth/refresh responded 200 in 57.8113 ms
+2026-11-03 09:30:03.269 +05:30 [WRN] HTTP POST /api/auth/refresh responded 401 in 25.2060 ms
+2026-11-03 09:31:03.125 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:31:03.276 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 200.1678 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method59(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:31:03.313 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPPBS950N0Q
+2026-11-03 09:31:03.349 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 4.6133 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method59(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:31:03.352 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPPBS950N0R
+2026-11-03 09:31:03.352 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 287.3124 ms
+2026-11-03 09:31:03.367 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-11-03 09:31:03.368 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:31:03.390 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 31.1038 ms
+2026-11-03 09:31:03.394 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-11-03 09:31:03.397 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.7742 ms
+2026-11-03 09:31:03.403 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-11-03 09:31:03.405 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.4876 ms
+2026-11-03 09:31:03.412 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:asc:_:_:1:10
+2026-11-03 09:31:03.416 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 4.6406 ms
+2026-11-03 09:31:03.422 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 0.6051 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method59(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 09:31:03.446 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPPBS950N11
+2026-11-03 09:31:03.449 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 81.9152 ms
+2026-11-03 09:31:03.461 +05:30 [INF] HTTP GET /health responded 200 in 7.3192 ms
+2026-11-03 09:31:03.465 +05:30 [INF] HTTP GET /health responded 200 in 0.9927 ms
+2026-11-03 09:31:03.466 +05:30 [INF] HTTP GET /health responded 200 in 0.3561 ms
+2026-11-03 09:31:03.470 +05:30 [INF] HTTP GET /health responded 200 in 0.5885 ms
+2026-11-03 09:31:03.472 +05:30 [INF] HTTP GET /health responded 200 in 0.2578 ms
+2026-11-03 09:31:03.971 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10

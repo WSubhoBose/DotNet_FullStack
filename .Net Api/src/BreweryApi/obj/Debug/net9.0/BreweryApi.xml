@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BreweryApi</name>
+    </assembly>
+    <members>
+        <member name="T:BreweryApi.Controllers.AuthController">
+            <summary>Issues access tokens for the brewery UI.</summary>
+        </member>
+        <member name="M:BreweryApi.Controllers.AuthController.#ctor(BreweryApi.Domain.Interfaces.ITokenService)">
+            <summary>Issues access tokens for the brewery UI.</summary>
+        </member>
+        <member name="M:BreweryApi.Controllers.AuthController.CreateToken(BreweryApi.Domain.Entities.TokenRequest,System.Threading.CancellationToken)">
+            <summary>Checks that the username is in SQLite and returns an access token.</summary>
+            <param name="request">Username and password to validate.</param>
+            <param name="cancellationToken">Token used to cancel the request.</param>
+            <returns>An opaque access token and its expiration timestamp.</returns>
+        </member>
+        <member name="M:BreweryApi.Controllers.AuthController.RefreshToken(BreweryApi.Domain.Entities.RefreshTokenRequest,System.Threading.CancellationToken)">
+            <summary>Rotates a refresh token and returns a new access and refresh token pair.</summary>
+            <param name="request">Refresh token to rotate.</param>
+            <param name="cancellationToken">Token used to cancel the request.</param>
+            <returns>A new token pair, or an unauthorized response for an invalid refresh token.</returns>
+        </member>
+        <member name="T:BreweryApi.Controllers.BreweriesV1Controller">
+            <summary>Provides version 1 brewery search and autocomplete endpoints.</summary>
+            <param name="breweryDataService">Application service for brewery search operations.</param>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV1Controller.#ctor(BreweryApi.Domain.Interfaces.IBreweryService)">
+            <summary>Provides version 1 brewery search and autocomplete endpoints.</summary>
+            <param name="breweryDataService">Application service for brewery search operations.</param>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV1Controller.Get(BreweryApi.Domain.Models.BreweryQuery,System.Threading.CancellationToken)">
+            <summary>Searches and lists breweries with filtering, sorting, and pagination.</summary>
+            <remarks>
+            Results can be filtered by search text, brewery name, or city. Page size is limited
+            to 200. Distance sorting requires both latitude and longitude.
+            </remarks>
+            <param name="query">Filters, sort options, coordinates, and pagination settings.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <returns>A page of matching breweries and pagination metadata.</returns>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV1Controller.Autocomplete(System.String,System.Threading.CancellationToken,System.Int32)">
+            <summary>Returns autocomplete suggestions for brewery names matching a term.</summary>
+            <remarks>The term must contain at least two characters; the limit must be between 1 and 20.</remarks>
+            <param name="term">Required text used to find matching brewery names.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <param name="limit">Maximum number of suggestions to return; defaults to 10.</param>
+            <returns>A list of matching brewery-name suggestions.</returns>
+        </member>
+        <member name="T:BreweryApi.Controllers.BreweriesV2Controller">
+            <summary>Provides authenticated version 2 brewery search and autocomplete endpoints.</summary>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV2Controller.#ctor(BreweryApi.Domain.Interfaces.IBreweryCatalogService)">
+            <summary>Provides authenticated version 2 brewery search and autocomplete endpoints.</summary>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV2Controller.Get(BreweryApi.Domain.Models.BreweryQuery,System.Threading.CancellationToken)">
+            <summary>Searches the SQLite brewery catalog with filtering, sorting, and pagination.</summary>
+            <param name="query">Filters, sort options, coordinates, and pagination settings.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <returns>A page of matching breweries and pagination metadata.</returns>
+        </member>
+        <member name="M:BreweryApi.Controllers.BreweriesV2Controller.Autocomplete(System.String,System.Threading.CancellationToken,System.Int32)">
+            <summary>Returns autocomplete suggestions from the SQLite brewery catalog.</summary>
+            <param name="term">Required text used to find matching brewery values.</param>
+            <param name="ct">Token used to cancel the request when the client disconnects.</param>
+            <param name="limit">Maximum number of suggestions to return; defaults to 10.</param>
+            <returns>A list of matching brewery suggestions.</returns>
+        </member>
+        <member name="T:BreweryApi.Extensions.RegisterDependencies">
+            <summary>Registers the brewery API's application and infrastructure dependencies.</summary>
+        </member>
+        <member name="M:BreweryApi.Extensions.RegisterDependencies.AddDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers persistence and external-service infrastructure.
+            </summary>
+        </member>
+        <member name="T:BreweryApi.Middleware.ExceptionHandlingMiddleware">
+            <summary>Converts application and upstream-service exceptions into Problem Details responses.</summary>
+            <param name="next">The next request delegate in the middleware pipeline.</param>
+            <param name="logger">Logger used to record handled and unhandled request failures.</param>
+        </member>
+        <member name="M:BreweryApi.Middleware.ExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{BreweryApi.Middleware.ExceptionHandlingMiddleware})">
+            <summary>Converts application and upstream-service exceptions into Problem Details responses.</summary>
+            <param name="next">The next request delegate in the middleware pipeline.</param>
+            <param name="logger">Logger used to record handled and unhandled request failures.</param>
+        </member>
+        <member name="M:BreweryApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>Invokes the next middleware and handles exceptions raised while processing the request.</summary>
+            <param name="context">The current HTTP request and response context.</param>
+        </member>
+        <member name="T:BreweryApi.OpenApi.AuthorizationOperationFilter">
+            <summary>Adds the Auth header requirement only to protected operations.</summary>
+        </member>
+        <member name="M:BreweryApi.OpenApi.AuthorizationOperationFilter.Apply(Microsoft.OpenApi.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>Applies authentication metadata from the endpoint to its OpenAPI operation.</summary>
+        </member>
+        <member name="T:Program">
+            <summary>Entry point for the Brewery API application.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\bin\Release\net9.0\ElfBeauty.BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.sourcelink.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeaut.E023D153.Up2Date
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\refint\ElfBeauty.BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ElfBeauty.BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Infrastructure\obj\Release\net9.0\ref\ElfBeauty.BreweryApi.Infrastructure.dll

@@ -1,0 +1,39 @@
+2026-10-05 17:57:48.387 +05:30 [INF] Now listening on: http://127.0.0.1:5089
+2026-10-05 17:57:48.507 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 17:57:48.515 +05:30 [INF] Hosting environment: Production
+2026-10-05 17:57:48.526 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\elf beauty\src\ElfBeauty.BreweryApi
+2026-10-05 17:58:09.121 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 17:58:09.219 +05:30 [INF] HTTP GET /health responded 200 in 216.8923 ms
+2026-10-05 17:58:09.501 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 17:58:11.724 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1861.0757ms
+2026-10-05 17:58:11.885 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2563.4366 ms
+2026-10-05 18:27:07.681 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 18:27:07.852 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 18:27:07.854 +05:30 [INF] Hosting environment: Development
+2026-10-05 18:27:07.854 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 18:29:28.071 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 18:29:28.131 +05:30 [INF] HTTP GET /health responded 200 in 159.1213 ms
+2026-10-05 18:29:28.998 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 431.2154 ms
+2026-10-05 18:30:03.169 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.9916 ms
+2026-10-05 18:31:10.422 +05:30 [INF] HTTP GET /health responded 200 in 2.1598 ms
+2026-10-05 18:32:33.424 +05:30 [WRN] HTTP GET /api/v1/breweries/autocomplete responded 400 in 355.4008 ms
+2026-10-05 18:32:33.532 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 18:32:33.711 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.7692 ms
+2026-10-05 18:32:35.891 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 2128.2408ms
+2026-10-05 18:32:36.120 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2649.6139 ms
+2026-10-05 18:33:17.982 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 16.6230 ms
+2026-10-05 18:37:00.755 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 18:37:00.863 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 18:37:00.865 +05:30 [INF] Hosting environment: Development
+2026-10-05 18:37:00.865 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 18:37:01.022 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 18:37:01.254 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 18:37:01.438 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 323.1073 ms
+2026-10-05 18:37:01.997 +05:30 [INF] HTTP GET /health responded 200 in 13.9093 ms
+2026-10-05 18:37:02.765 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1308.6232ms
+2026-10-05 18:37:02.894 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1961.8029 ms
+2026-10-05 18:47:14.168 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 18:47:14.357 +05:30 [INF] HTTP GET /health responded 200 in 1.1275 ms
+2026-10-05 18:47:14.554 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.9654 ms
+2026-10-05 18:47:15.152 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 981.1947ms
+2026-10-05 18:47:15.162 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 999.7012 ms

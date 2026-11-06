@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:5002
+
+### Request a token using the configured UI credentials
+POST {{baseUrl}}/api/auth/token
+Content-Type: application/json
+
+{
+  "username": "brewery-ui",
+  "password": "your-ui-password"
+}
+
+### Exchange a refresh token for a new token pair
+POST {{baseUrl}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "paste-refresh-token-here"
+}

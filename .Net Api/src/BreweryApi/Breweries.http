@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5001
+
+### List breweries with pagination
+GET {{baseUrl}}/api/v1/breweries?page=1&pageSize=10
+Accept: application/json
+
+### Search breweries by name and city
+GET {{baseUrl}}/api/v1/breweries?name=dog&city=portland&page=1&pageSize=10
+Accept: application/json
+
+### Sort breweries by distance (coordinates are required)
+GET {{baseUrl}}/api/v1/breweries?sortBy=distance&latitude=45.5231&longitude=-122.6765&page=1&pageSize=10
+Accept: application/json
+
+### Get brewery-name autocomplete suggestions
+GET {{baseUrl}}/api/v1/breweries/autocomplete?term=brew&limit=10
+Accept: application/json
+
+### Validation error: page must be at least 1 (expected 400)
+GET {{baseUrl}}/api/v1/breweries?page=0
+Accept: application/json
+
+### Validation error: distance sorting requires coordinates (expected 400)
+GET {{baseUrl}}/api/v1/breweries?sortBy=distance
+Accept: application/json
+
+### Validation error: autocomplete term is required (expected 400)
+GET {{baseUrl}}/api/v1/breweries/autocomplete
+Accept: application/json

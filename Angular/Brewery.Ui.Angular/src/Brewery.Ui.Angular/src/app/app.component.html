@@ -1,0 +1,164 @@
+<main class="shell">
+  <header class="page-header">
+    <div>
+      <p class="eyebrow">BREWERY API</p>
+      <h1>Brewery Explorer</h1>
+      <p class="subtitle">Search the brewery catalog through the API gateway.</p>
+    </div>
+    @if (isAuthenticated) {
+      <button class="button secondary" type="button" (click)="signOut()">Sign out</button>
+    }
+  </header>
+
+  @if (errorMessage) {
+    <p class="error" role="alert">{{ errorMessage }}</p>
+  }
+
+  @if (!isAuthenticated) {
+    <section class="panel login-panel">
+      <h2>Sign in</h2>
+      <p>Use your configured UI account to get an access token.</p>
+      <form (ngSubmit)="signIn()">
+        <label>
+          Username
+          <input name="username" [(ngModel)]="username" autocomplete="username" required>
+        </label>
+        <label>
+          Password
+          <input name="password" [(ngModel)]="password" type="password" autocomplete="current-password" required>
+        </label>
+        <button class="button" type="submit">Sign in</button>
+      </form>
+    </section>
+  } @else {
+    <section class="panel">
+      <h2>Find breweries</h2>
+      <form class="filters" (ngSubmit)="loadBreweries(page)">
+        <label>
+          Search
+          <input name="search" [(ngModel)]="search" placeholder="Brewery name">
+        </label>
+        <label>
+          Name
+          <input name="name" [(ngModel)]="name" placeholder="Optional name filter">
+        </label>
+        <label>
+          City
+          <input name="city" [(ngModel)]="city" placeholder="Optional city filter">
+        </label>
+        <label>
+          Sort by
+          <select name="sortBy" [(ngModel)]="sortBy">
+            <option value="">Default</option>
+            <option value="name">Name</option>
+            <option value="city">City</option>
+            <option value="distance">Distance</option>
+          </select>
+        </label>
+        <label>
+          Direction
+          <select name="sortDirection" [(ngModel)]="sortDirection">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </label>
+        <label>
+          Page
+          <input name="page" type="number" min="1" step="1" [(ngModel)]="page" required>
+        </label>
+        <label>
+          Results per page
+          <input name="pageSize" type="number" min="1" max="200" step="1" [(ngModel)]="pageSize" required>
+        </label>
+        @if (sortBy === 'distance') {
+          <label>
+            Latitude
+            <input name="latitude" type="number" min="-90" max="90" step="any" [(ngModel)]="latitude" required>
+          </label>
+          <label>
+            Longitude
+            <input name="longitude" type="number" min="-180" max="180" step="any" [(ngModel)]="longitude" required>
+          </label>
+        }
+        <button class="button" type="submit">Search</button>
+      </form>
+
+      <div class="autocomplete">
+        <label>
+          Autocomplete
+          <input
+            name="autocompleteTerm"
+            [(ngModel)]="autocompleteTerm"
+            (input)="loadSuggestions()"
+            [disabled]="!canUseAutocomplete"
+            placeholder="Type at least 2 characters">
+        </label>
+        <label>
+          Suggestion limit
+          <input
+            name="autocompleteLimit"
+            type="number"
+            min="1"
+            max="20"
+            step="1"
+            [(ngModel)]="autocompleteLimit"
+            (ngModelChange)="loadSuggestions()"
+            [disabled]="!canUseAutocomplete">
+        </label>
+        @if (!canUseAutocomplete) {
+          <p class="disabled-notice">
+            @if (autocompletePermissionUnknown) {
+              Sign out and sign in again to check autocomplete access.
+            } @else {
+              Autocomplete is unavailable for this account.
+            }
+          </p>
+        }
+        @if (suggestions.length) {
+          <ul class="suggestions">
+            @for (suggestion of suggestions; track suggestion) {
+              <li><button type="button" (click)="chooseSuggestion(suggestion)">{{ suggestion }}</button></li>
+            }
+          </ul>
+        }
+      </div>
+    </section>
+
+    <section class="panel results" aria-live="polite">
+      <div class="results-heading">
+        <h2>Results</h2>
+        <span>{{ totalCount }} breweries</span>
+      </div>
+      @if (loading) {
+        <p>Loading breweries…</p>
+      } @else if (breweries.length === 0) {
+        <p>No results. Search the catalog to get started.</p>
+      } @else {
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Name</th><th>Type</th><th>City</th><th>State / Province</th><th>Country</th><th>Distance</th></tr>
+            </thead>
+            <tbody>
+              @for (brewery of breweries; track brewery.id) {
+                <tr>
+                  <td>{{ brewery.name }}</td>
+                  <td>{{ brewery.breweryType }}</td>
+                  <td>{{ brewery.city }}</td>
+                  <td>{{ brewery.stateProvince }}</td>
+                  <td>{{ brewery.country }}</td>
+                  <td>{{ brewery.distance ?? '—' }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+        <nav class="pagination" aria-label="Pagination">
+          <button class="button secondary" type="button" [disabled]="!hasPreviousPage" (click)="loadBreweries(page - 1)">Previous</button>
+          <span>Page {{ page }}</span>
+          <button class="button secondary" type="button" [disabled]="!hasNextPage" (click)="loadBreweries(page + 1)">Next</button>
+        </nav>
+      }
+    </section>
+  }
+</main>

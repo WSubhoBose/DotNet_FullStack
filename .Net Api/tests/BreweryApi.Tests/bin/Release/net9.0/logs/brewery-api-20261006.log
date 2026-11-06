@@ -1,0 +1,14 @@
+2026-10-06 14:18:45.812 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-06 14:18:46.075 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-10-06 14:18:46.163 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 484.2186 ms
+2026-10-06 14:18:46.287 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-10-06 14:18:46.319 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 38.0558 ms
+2026-10-06 14:18:46.385 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:asc:_:_:1:10
+2026-10-06 14:18:46.397 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 19.4558 ms
+2026-10-06 14:18:46.456 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-10-06 14:18:46.473 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 16.7909 ms
+2026-10-06 14:18:46.562 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-10-06 14:18:46.578 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 16.2871 ms
+2026-10-06 14:18:47.735 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP3GQCRQK3I
+2026-10-06 14:18:47.777 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNP3GQCRQK3J
+2026-10-06 14:18:47.858 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNP3GQCRQK3K

@@ -1,0 +1,313 @@
+2026-10-05 18:47:14.606 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-10-05 18:51:30.500 +05:30 [INF] Now listening on: http://127.0.0.1:5197
+2026-10-05 18:51:30.536 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 18:51:30.536 +05:30 [INF] Hosting environment: Production
+2026-10-05 18:51:30.536 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 18:51:33.155 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 18:51:33.180 +05:30 [INF] HTTP GET /health responded 200 in 48.6130 ms
+2026-10-05 18:51:33.266 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 18:51:33.439 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 138.9996 ms
+2026-10-05 18:51:34.059 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 710.1886ms
+2026-10-05 18:51:34.106 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 991.9198 ms
+2026-10-05 18:55:09.471 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 18:55:09.501 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 18:55:09.504 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 18:55:09.505 +05:30 [INF] Hosting environment: Development
+2026-10-05 18:55:09.506 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 18:55:13.829 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 141.0202 ms
+2026-10-05 18:55:17.140 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 126.3526 ms
+2026-10-05 18:55:17.140 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 126.3437 ms
+2026-10-05 18:55:17.140 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 125.9331 ms
+2026-10-05 18:55:17.174 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.7054 ms
+2026-10-05 18:55:17.174 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 12.5721 ms
+2026-10-05 18:55:17.874 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 230.8568 ms
+2026-10-05 18:57:59.395 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 18:57:59.425 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 18:57:59.428 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 18:57:59.429 +05:30 [INF] Hosting environment: Development
+2026-10-05 18:57:59.430 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 18:58:02.220 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 121.5258 ms
+2026-10-05 18:58:02.309 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.8321 ms
+2026-10-05 18:58:02.363 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 79.1210 ms
+2026-10-05 18:58:02.363 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 79.7001 ms
+2026-10-05 18:58:02.363 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 79.4821 ms
+2026-10-05 18:58:02.363 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 48.1659 ms
+2026-10-05 18:58:03.017 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 278.7057 ms
+2026-10-05 19:01:50.623 +05:30 [INF] Now listening on: http://127.0.0.1:5198
+2026-10-05 19:01:50.679 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 19:01:50.681 +05:30 [INF] Hosting environment: Development
+2026-10-05 19:01:50.682 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 19:02:58.386 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 621.9719 ms
+2026-10-05 19:03:41.379 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.3681 ms
+2026-10-05 19:03:57.169 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.1099 ms
+2026-10-05 19:09:47.699 +05:30 [INF] Now listening on: http://127.0.0.1:5198
+2026-10-05 19:09:47.788 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 19:09:47.790 +05:30 [INF] Hosting environment: Development
+2026-10-05 19:09:47.791 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 19:09:48.283 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 19:09:48.381 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 19:09:48.437 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 185.8454 ms
+2026-10-05 19:09:48.670 +05:30 [INF] HTTP GET /health responded 200 in 7.4980 ms
+2026-10-05 19:09:50.463 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1995.606ms
+2026-10-05 19:09:50.534 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2330.3132 ms
+2026-10-05 19:09:51.449 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 730.9878ms
+2026-10-05 19:09:51.872 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1153.0198ms
+2026-10-05 19:09:51.896 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1176.8009ms
+2026-10-05 19:09:52.106 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1387.3568ms
+2026-10-05 19:09:52.148 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1428.7615ms
+2026-10-05 19:09:52.204 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1485.0621ms
+2026-10-05 19:09:52.209 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1500.3951 ms
+2026-10-05 19:09:52.228 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 2.1120 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 19:09:52.248 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2SOFSMLIU:00000003
+2026-10-05 19:09:52.283 +05:30 [WRN] HTTP GET /api/v1/breweries/autocomplete responded 400 in 6.6044 ms
+2026-10-05 19:10:07.534 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7332 ms
+2026-10-05 19:10:15.404 +05:30 [INF] Brewery catalogue cache hit for autocomplete.
+2026-10-05 19:10:15.405 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1.5326 ms
+2026-10-05 19:13:18.192 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 19:13:18.223 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 19:13:18.226 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 19:13:18.227 +05:30 [INF] Hosting environment: Development
+2026-10-05 19:13:18.228 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 19:13:19.405 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 128.6272 ms
+2026-10-05 19:13:19.462 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.3721 ms
+2026-10-05 19:13:19.497 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 36.8406 ms
+2026-10-05 19:13:19.497 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 36.5995 ms
+2026-10-05 19:13:19.497 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 36.5931 ms
+2026-10-05 19:13:19.498 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 38.0974 ms
+2026-10-05 19:13:19.985 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 191.4689 ms
+2026-10-05 19:50:39.210 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 19:50:39.343 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 19:50:39.347 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 19:50:39.351 +05:30 [INF] Hosting environment: Development
+2026-10-05 19:50:39.355 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 19:51:03.935 +05:30 [INF] HTTP GET /health responded 200 in 286.5486 ms
+2026-10-05 19:51:04.864 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 262.5513 ms
+2026-10-05 19:51:05.688 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 19:51:07.472 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1570.7205ms
+2026-10-05 19:51:07.571 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2121.8615 ms
+2026-10-05 19:51:08.588 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 711.6628ms
+2026-10-05 19:51:08.970 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1091.7634ms
+2026-10-05 19:51:08.995 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1116.2544ms
+2026-10-05 19:51:09.056 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1177.609ms
+2026-10-05 19:51:09.151 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1272.5327ms
+2026-10-05 19:51:09.159 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1297.9535 ms
+2026-10-05 19:51:09.424 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 8.1593 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 19:51:09.460 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2TFHFBVD2:00000001
+2026-10-05 20:02:56.890 +05:30 [INF] Now listening on: http://127.0.0.1:5199
+2026-10-05 20:02:56.961 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 20:02:56.963 +05:30 [INF] Hosting environment: Development
+2026-10-05 20:02:56.964 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 20:02:57.271 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-10-05 20:02:57.426 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 253.8381 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 20:02:57.498 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2TM68MQGK:00000001
+2026-10-05 20:02:57.663 +05:30 [WRN] HTTP GET /api/v1/breweries/autocomplete responded 400 in 33.6838 ms
+2026-10-05 20:03:24.950 +05:30 [INF] HTTP GET /health responded 200 in 18.2725 ms
+2026-10-05 20:03:25.735 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 525.0736 ms
+2026-10-05 20:03:26.037 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 20:03:27.358 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1201.3621ms
+2026-10-05 20:03:27.405 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1376.4361 ms
+2026-10-05 20:03:28.173 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 740.4002ms
+2026-10-05 20:03:28.570 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1132.6369ms
+2026-10-05 20:03:28.574 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1136.2944ms
+2026-10-05 20:03:28.646 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1208.9543ms
+2026-10-05 20:03:28.659 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1220.6239ms
+2026-10-05 20:03:28.797 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1359.8647ms
+2026-10-05 20:03:28.806 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1381.4342 ms
+2026-10-05 20:03:28.819 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 1.0332 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 20:03:28.822 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2TM68MQGL:00000005
+2026-10-05 20:03:28.886 +05:30 [WRN] HTTP GET /api/v1/breweries/autocomplete responded 400 in 4.8654 ms
+2026-10-05 20:10:50.446 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 20:10:50.539 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 20:10:50.542 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 20:10:50.543 +05:30 [INF] Hosting environment: Development
+2026-10-05 20:10:50.543 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 20:11:02.854 +05:30 [INF] HTTP GET /health responded 200 in 213.7317 ms
+2026-10-05 20:11:03.497 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 151.6627 ms
+2026-10-05 20:11:04.636 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 20:11:06.650 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1482.1188ms
+2026-10-05 20:11:06.848 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2644.5935 ms
+2026-10-05 20:11:08.493 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 714.2062ms
+2026-10-05 20:11:08.908 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1122.7503ms
+2026-10-05 20:11:09.093 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1307.1149ms
+2026-10-05 20:11:09.208 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1422.018ms
+2026-10-05 20:11:09.289 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1503.3389ms
+2026-10-05 20:11:09.311 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1557.1082 ms
+2026-10-05 20:11:09.849 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 6.3431 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 20:11:09.901 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2TQMSB0J4:00000001
+2026-10-05 20:16:34.560 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 20:16:34.601 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 20:16:34.604 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 20:16:34.605 +05:30 [INF] Hosting environment: Development
+2026-10-05 20:16:34.605 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 20:16:41.740 +05:30 [INF] HTTP GET /health responded 200 in 75.2767 ms
+2026-10-05 20:16:41.984 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 41.6847 ms
+2026-10-05 20:16:42.263 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:2
+2026-10-05 20:16:43.228 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 897.9895ms
+2026-10-05 20:16:43.276 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1095.3856 ms
+2026-10-05 20:16:43.926 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 421.6743ms
+2026-10-05 20:16:44.451 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 942.7279ms
+2026-10-05 20:16:44.615 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1106.7362ms
+2026-10-05 20:16:44.788 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1279.7017ms
+2026-10-05 20:16:44.790 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1281.7101ms
+2026-10-05 20:16:44.796 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1307.2217 ms
+2026-10-05 20:16:44.962 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 2.1687 ms
+ElfBeauty.BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at ElfBeauty.BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at ElfBeauty.BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-10-05 20:16:44.978 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNP2TTRVRO0C:00000001
+2026-10-05 20:44:31.827 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-05 20:44:31.903 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-05 20:44:31.907 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-05 20:44:31.908 +05:30 [INF] Hosting environment: Development
+2026-10-05 20:44:31.909 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-05 20:44:37.799 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 854.9003 ms
+2026-10-05 20:44:37.917 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 3.1228 ms
+2026-10-05 20:44:38.025 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 111.6700 ms
+2026-10-05 20:44:38.026 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 111.8880 ms
+2026-10-05 20:44:38.026 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 112.5771 ms
+2026-10-05 20:44:38.030 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 116.3299 ms
+2026-10-05 20:44:39.684 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1225.6679 ms
+2026-10-05 20:45:02.713 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:distance:desc:90:90:1:50
+2026-10-05 20:45:04.338 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1462.0362ms
+2026-10-05 20:45:04.480 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2030.9803 ms

@@ -1,0 +1,100 @@
+2026-11-03 09:31:03.538 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 83.8418 ms
+2026-11-03 09:31:03.610 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 09:31:03.628 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-11-03 09:31:03.630 +05:30 [INF] HTTP POST /api/auth/refresh responded 200 in 66.7398 ms
+2026-11-03 09:31:03.636 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 30.0224 ms
+2026-11-03 09:31:03.641 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9231 ms
+2026-11-03 09:31:03.648 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 5.3831 ms
+2026-11-03 09:31:03.651 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9875 ms
+2026-11-03 09:31:03.654 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.4429 ms
+2026-11-03 09:31:03.657 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.3784 ms
+2026-11-03 09:31:03.659 +05:30 [WRN] HTTP POST /api/auth/refresh responded 401 in 25.6486 ms
+2026-11-03 09:31:03.659 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8413 ms
+2026-11-03 09:31:03.662 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.0227 ms
+2026-11-03 09:31:03.667 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.3014 ms
+2026-11-03 09:31:03.669 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8104 ms
+2026-11-03 11:01:57.490 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 11:01:57.490 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 11:01:57.724 +05:30 [INF] AuthenticationScheme: Auth was challenged.
+2026-11-03 11:01:57.753 +05:30 [WRN] HTTP GET /api/v2/breweries responded 401 in 402.4195 ms
+2026-11-03 11:01:57.756 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 415.9229 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method61(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 11:01:57.823 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPPDF1GB1VA
+2026-11-03 11:01:58.091 +05:30 [WRN] HTTP POST /api/auth/token responded 401 in 269.6138 ms
+2026-11-03 11:01:58.137 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 3.7517 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method61(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 11:01:58.186 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPPDF1GB1VD
+2026-11-03 11:01:58.787 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 15.2828 ms
+2026-11-03 11:01:58.909 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 17.9507 ms
+2026-11-03 11:01:59.037 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 19.7303 ms
+2026-11-03 11:01:59.091 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-03 11:01:59.121 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 1.1924 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method61(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-03 11:01:59.217 +05:30 [INF] HTTP POST /api/auth/token responded 200 in 160.5886 ms
+2026-11-03 11:01:59.260 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-03 11:01:59.261 +05:30 [WRN] HTTP GET /api/v2/breweries/autocomplete responded 403 in 12.4435 ms
+2026-11-03 11:01:59.261 +05:30 [INF] AuthenticationScheme: Auth was forbidden.
+2026-11-03 11:01:59.325 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 32.5847 ms
+2026-11-03 11:01:59.408 +05:30 [INF] HTTP GET /health responded 200 in 47.8260 ms
+2026-11-03 11:01:59.474 +05:30 [INF] HTTP GET /health responded 200 in 0.7700 ms
+2026-11-03 11:01:59.475 +05:30 [INF] HTTP GET /health responded 200 in 0.3377 ms
+2026-11-03 11:01:59.478 +05:30 [INF] HTTP GET /health responded 200 in 0.7486 ms
+2026-11-03 11:01:59.480 +05:30 [INF] HTTP GET /health responded 200 in 0.2774 ms
+2026-11-03 11:01:59.529 +05:30 [WRN] Failed to determine the https port for redirect.

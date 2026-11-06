@@ -1,0 +1,21 @@
+2026-10-07 15:15:34.686 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-07 15:15:34.749 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-07 15:15:34.752 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-07 15:15:34.753 +05:30 [INF] Hosting environment: Development
+2026-10-07 15:15:34.753 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-07 15:16:19.536 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 2371.8754 ms
+2026-10-07 15:16:20.120 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 1.3009 ms
+2026-10-07 15:16:20.362 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 351.5757 ms
+2026-10-07 15:16:20.362 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 365.4457 ms
+2026-10-07 15:16:20.362 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 365.1494 ms
+2026-10-07 15:16:20.363 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 365.8045 ms
+2026-10-07 15:16:21.695 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1040.1806 ms
+2026-10-07 15:17:16.109 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1371.8578ms
+2026-10-07 15:17:16.117 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1248.9627ms
+2026-10-07 15:17:16.145 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1276.2387ms
+2026-10-07 15:17:16.227 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1361.3213ms
+2026-10-07 15:17:16.241 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 1373.2774ms
+2026-10-07 15:17:16.272 +05:30 [INF] HTTP GET /api/v1/breweries/autocomplete responded 200 in 1906.2460 ms
+2026-10-07 15:17:46.625 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:distance:asc:90:90:1:50
+2026-10-07 15:17:47.330 +05:30 [INF] Execution attempt. Source: 'IOpenBreweryClient-standard//Standard-Retry', Operation Key: 'null', Result: '200', Handled: 'false', Attempt: '0', Execution Time: 700.034ms
+2026-10-07 15:17:47.380 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 788.5945 ms

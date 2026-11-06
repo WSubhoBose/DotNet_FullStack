@@ -1,0 +1,144 @@
+2026-11-02 22:00:21.447 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-02 22:00:21.471 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10
+2026-11-02 22:00:21.476 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 35.4828 ms
+2026-11-02 22:00:21.481 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8351 ms
+2026-11-02 22:00:21.487 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 4.6978 ms
+2026-11-02 22:00:21.489 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5998 ms
+2026-11-02 22:00:21.491 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5194 ms
+2026-11-02 22:00:21.492 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4190 ms
+2026-11-02 22:00:21.493 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4010 ms
+2026-11-02 22:00:21.496 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9083 ms
+2026-11-02 22:00:21.497 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5035 ms
+2026-11-02 22:00:21.499 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4337 ms
+2026-11-02 22:00:21.500 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3596 ms
+2026-11-02 22:00:21.501 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3416 ms
+2026-11-02 22:00:21.502 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3430 ms
+2026-11-02 22:00:21.510 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8905 ms
+2026-11-02 22:00:21.513 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8169 ms
+2026-11-02 22:00:21.515 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6043 ms
+2026-11-02 22:00:21.517 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7710 ms
+2026-11-02 22:00:21.519 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.6738 ms
+2026-11-02 22:00:21.520 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7525 ms
+2026-11-02 22:00:21.522 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5560 ms
+2026-11-02 22:00:21.523 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4007 ms
+2026-11-02 22:00:21.524 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3227 ms
+2026-11-02 22:00:21.525 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3161 ms
+2026-11-02 22:00:21.526 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2985 ms
+2026-11-02 22:00:21.526 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3232 ms
+2026-11-02 22:00:21.529 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.9419 ms
+2026-11-02 22:00:21.531 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8522 ms
+2026-11-02 22:00:21.533 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8800 ms
+2026-11-02 22:00:21.534 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4539 ms
+2026-11-02 22:00:21.536 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4091 ms
+2026-11-02 22:00:21.537 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3564 ms
+2026-11-02 22:00:21.537 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3363 ms
+2026-11-02 22:00:21.538 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3231 ms
+2026-11-02 22:00:21.539 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3025 ms
+2026-11-02 22:00:21.540 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3003 ms
+2026-11-02 22:00:21.541 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2904 ms
+2026-11-02 22:00:21.542 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3116 ms
+2026-11-02 22:00:21.542 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2938 ms
+2026-11-02 22:00:21.543 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2745 ms
+2026-11-02 22:00:21.544 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4947 ms
+2026-11-02 22:00:21.546 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8191 ms
+2026-11-02 22:00:21.547 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4314 ms
+2026-11-02 22:00:21.548 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3263 ms
+2026-11-02 22:00:21.550 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3812 ms
+2026-11-02 22:00:21.550 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3619 ms
+2026-11-02 22:00:21.551 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3497 ms
+2026-11-02 22:00:21.552 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3217 ms
+2026-11-02 22:00:21.553 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3324 ms
+2026-11-02 22:00:21.554 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3142 ms
+2026-11-02 22:00:21.555 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2889 ms
+2026-11-02 22:00:21.556 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3055 ms
+2026-11-02 22:00:21.556 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2804 ms
+2026-11-02 22:00:21.557 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2976 ms
+2026-11-02 22:00:21.558 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.3044 ms
+2026-11-02 22:00:21.559 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2881 ms
+2026-11-02 22:00:21.560 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.2896 ms
+2026-11-02 22:00:21.562 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.8913 ms
+2026-11-02 22:00:21.564 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.7871 ms
+2026-11-02 22:00:21.565 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.5145 ms
+2026-11-02 22:00:21.567 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 0.4668 ms
+2026-11-02 22:00:21.573 +05:30 [WRN] HTTP GET /api/v1/breweries responded 429 in 5.5255 ms
+2026-11-02 22:01:24.567 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-11-02 22:01:24.646 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 121.2427 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method58(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-02 22:01:24.673 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPOVQTB6VIC
+2026-11-02 22:01:24.691 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 2.2244 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Page must be greater than or equal to 1.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 15
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method58(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-02 22:01:24.693 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Page must be greater than or equal to 1., TraceId: 0HNPOVQTB6VID
+2026-11-02 22:01:24.701 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:desc:_:_:1:10
+2026-11-02 22:01:24.711 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 12.7109 ms
+2026-11-02 22:01:24.716 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:desc:_:_:1:10
+2026-11-02 22:01:24.717 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 2.3297 ms
+2026-11-02 22:01:24.720 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:name:asc:_:_:1:10
+2026-11-02 22:01:24.722 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.6166 ms
+2026-11-02 22:01:24.724 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:city:asc:_:_:1:10
+2026-11-02 22:01:24.726 +05:30 [INF] HTTP GET /api/v1/breweries responded 200 in 1.4610 ms
+2026-11-02 22:01:24.731 +05:30 [ERR] HTTP GET /api/v1/breweries responded 500 in 0.4830 ms
+BreweryApi.Domain.Exceptions.RequestValidationException: Latitude and longitude are required when sorting by distance.
+   at BreweryApi.Domain.Helpers.BreweryHelper.Validate(BreweryQuery query) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Domain\Helpers\BreweryHelper.cs:line 42
+   at BreweryApi.Application.Service.BreweryService.GetAsync(BreweryQuery query, CancellationToken cancellationToken) in C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Application\Service\BreweryService.cs:line 16
+   at lambda_method58(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-11-02 22:01:24.732 +05:30 [WRN] Request rejected. StatusCode: 400, Method: GET, Path: /api/v1/breweries, Message: Latitude and longitude are required when sorting by distance., TraceId: 0HNPOVQTB6VII
+2026-11-02 22:01:24.740 +05:30 [INF] HTTP GET /health responded 200 in 3.7967 ms
+2026-11-02 22:01:24.742 +05:30 [INF] HTTP GET /health responded 200 in 0.2839 ms
+2026-11-02 22:01:24.744 +05:30 [INF] HTTP GET /health responded 200 in 0.3245 ms
+2026-11-02 22:01:24.747 +05:30 [INF] HTTP GET /health responded 200 in 0.2050 ms
+2026-11-02 22:01:24.748 +05:30 [INF] HTTP GET /health responded 200 in 0.2013 ms
+2026-11-02 22:01:25.170 +05:30 [INF] No Record found in Brewery query cache. CacheKey: breweries:_:_:_:_:asc:_:_:1:10

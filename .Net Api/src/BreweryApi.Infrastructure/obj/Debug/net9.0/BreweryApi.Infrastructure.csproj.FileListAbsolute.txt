@@ -1,0 +1,32 @@
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryA.2982B3A7.Up2Date
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\refint\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net with Angular\src\BreweryApi.Infrastructure\obj\Debug\net9.0\ref\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.deps.json
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\bin\Debug\net9.0\BreweryApi.Domain.xml
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.AssemblyInfo.cs
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryA.2982B3A7.Up2Date
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\refint\BreweryApi.Infrastructure.dll
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\BreweryApi.Infrastructure.pdb
+C:\Users\SU20345498\OneDrive - Wipro\repo\Assignments\Training\.Net Api\src\BreweryApi.Infrastructure\obj\Debug\net9.0\ref\BreweryApi.Infrastructure.dll

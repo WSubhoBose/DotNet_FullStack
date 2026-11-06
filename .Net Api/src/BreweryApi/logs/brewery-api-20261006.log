@@ -1,0 +1,12 @@
+2026-10-06 14:50:08.303 +05:30 [INF] Now listening on: https://localhost:7001
+2026-10-06 14:50:08.843 +05:30 [INF] Now listening on: http://localhost:5001
+2026-10-06 14:50:08.867 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-06 14:50:08.876 +05:30 [INF] Hosting environment: Development
+2026-10-06 14:50:08.881 +05:30 [INF] Content root path: C:\Users\SU20345498\OneDrive - Wipro\repo\git\ELF_Beauty\src\ElfBeauty.BreweryApi
+2026-10-06 14:50:58.559 +05:30 [INF] HTTP GET /swagger/index.html responded 304 in 9536.6679 ms
+2026-10-06 14:51:08.845 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 559.9324 ms
+2026-10-06 14:51:08.845 +05:30 [INF] HTTP GET /swagger/index.css responded 304 in 543.4178 ms
+2026-10-06 14:51:08.845 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 566.6264 ms
+2026-10-06 14:51:09.985 +05:30 [INF] HTTP GET /swagger/index.js responded 304 in 0.8206 ms
+2026-10-06 14:51:09.993 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 35.4951 ms
+2026-10-06 14:51:34.504 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 521.9164 ms
